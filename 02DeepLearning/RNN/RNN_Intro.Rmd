@@ -52,7 +52,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 $\left[\begin{array}{c}
 a[1]\\
-aeron[2]\\
+aaron[2]\\
 \vdots\\
 and[360]\\
 \vdots\\
@@ -154,6 +154,151 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 # Deep RNN
 
 ![](images/d_rnn.PNG){width=70%}
+
+# Word representation
+
+- Vacabulary = [a, aaron, ..., zulu, <UNK>], |V|=10,000
+- One hot representation
+
+\begin{array}{cccccc}
+Man & Woman & King & Queen & Apple & Pumpkin\\
+(5391) & (9853) & (4914) & (7157) & (456) & (6332)\\
+\left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0\\
+0\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right]
+\end{array}
+
+# Word representation
+
+- My favourite Christmas dessert is pumpkin ____ 
+- My favourite Christmas dessert is apple ____ 
+
+\begin{array}{cccccc}
+Man & Woman & King & Queen & Apple & Pumpkin\\
+(5391) & (9853) & (4914) & (7157) & (456) & (6332)\\
+\left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+0\\
+0\\
+0\\
+0
+\end{array}\right] & \left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right]
+\end{array}
+
+# Featurized representation: word embedding
+
 
 
 
