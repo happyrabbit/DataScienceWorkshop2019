@@ -1,0 +1,159 @@
+---
+title: "Recurrent Neural Networks"
+author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](../CNN/images/netlifylogo.png){width=15%}'
+date: "`r Sys.Date()`"
+output: 
+  slidy_presentation: 
+    footer: "http://scientistcafe.com"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Types of Neural Network 
+
+<center>
+![](../CNN/images/NN_EXP.png){width=80%}
+</center>
+
+# Why sequency?
+
+ |  |  |  |  |
+|:----------------:|:----------------------------:|:-------------------:|:---------------------:|
+| Speech Recognition | ![](images/sr.PNG){width=60%}| $\longrightarrow$ | Get your facts first, then you can distort them as you please. |
+| Music generation | $\emptyset$ | $\longrightarrow$ |  ![](images/music.PNG){width=60%} |
+| Sentiment classification | Great movie ? Are you kidding  me ! Not worth the money. | $\longrightarrow$ |  ![](images/rate.PNG){width=60%} |
+| DNA sequence analysis | ACGGGGCCTACTGTCAACTG | $\longrightarrow$  | AC _**GGGGCCTACTG**_ TCAACTG |
+| Machine translation | 网红脸 | $\longrightarrow$ | Internet celebrity face |
+| Video activity recognition | ![](images/video.PNG){width=60%} | $\longrightarrow$ | Running |
+| Name entity recognition | Use Netlify and Hugo. | $\longrightarrow$ | Use [Netlify](https://www.netlify.com) and [Hugo](https://gohugo.io). |
+
+
+# RNN types
+
+![](images/rnn_types.PNG){width=90%}
+
+
+# Notation
+
+- x: Use($x^{<1>}$)  Netlify($x^{<2>}$) and($x^{<3>}$) Hugo($x^{<4>}$) .($x^{<5>}$) 
+
+- y: 0 ($y^{<1>}$)  1($y^{<2>}$) 0($y^{<3>}$) 1($y^{<4>}$) 0($y^{<5>}$)
+
+- $x^{(i)<t>}$, $T_x^{(i)}$ ($i^{th}$ sample)
+
+- $y^{(i)<t>}$, $T_y^{(i)}$ ($i^{th}$ sample)
+
+
+# Representing words
+
+- One Hot Encoding (OHE)
+
+$\left[\begin{array}{c}
+a[1]\\
+aeron[2]\\
+\vdots\\
+and[360]\\
+\vdots\\
+Hugo[4075]\\
+\vdots\\
+Netlify[5210]\\
+\vdots\\
+use[8320]\\
+\vdots\\
+Zulu[10000]
+\end{array}\right]\Longrightarrow use=\left[\begin{array}{c}
+0\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{array}\right], Netlify=\left[\begin{array}{c}
+0\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{array}\right], and=\left[\begin{array}{c}
+0\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{array}\right], Hugo=\left[\begin{array}{c}
+0\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+1\\
+\vdots\\
+0\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{array}\right]$
+
+
+# What is RNN?
+
+![](images/rnn1.PNG){width=60%}
+
+# What is RNN?
+
+![](images/rnn1_2.PNG){width=60%}
+
+# Forward Propagation
+
+![](images/rnn1_2.PNG){width=60%}
+
+$a^{<0>}= \mathbf{o}$; $a^{<1>} = g(W_{aa}a^{<0>} + W_{ax}x^{<1>} + b_a)$  
+
+$\hat{y}^{<1>} = g'(W_{ya}a^{<1>} + b_y)$  
+
+$a^{<t>} = g(W_{aa}a^{<t-1>} + W_{ax}x^{<t>} + b_a)$  
+
+$\hat{y}^{<t>} = g'(W_{ya}a^{<t>} + b_y)$  
+
+
+# Forward Propagation
+
+![](images/rnn1_all.PNG){width=50%}
+
+$L^{<t>}(\hat{y}^{<t>}) = -y^{<t>}log(\hat{y}^{<t>}) - (1-y^{<t>})log(1-\hat{y}^{<t>})$  
+
+$L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
+
+# Backpropagation through time
+
+![](images/rnn_bp.PNG){width=70%}
+
+# Deep RNN
+
+![](images/d_rnn.PNG){width=70%}
+
+
+
