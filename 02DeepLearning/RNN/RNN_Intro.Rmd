@@ -299,6 +299,41 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 
 # Featurized representation: word embedding
 
+![](images/embedding1.PNG){width=80%}
 
 
+# Featurized representation: word embedding
 
+![](images/embedding2.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding3.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding4.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding5.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding6.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding7.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding8.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding9.PNG){width=80%}
+
+# Featurized representation: word embedding
+
+![](images/embedding10.PNG){width=80%}
