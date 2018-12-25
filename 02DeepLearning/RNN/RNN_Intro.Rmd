@@ -337,3 +337,12 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 # Featurized representation: word embedding
 
 ![](images/embedding10.PNG){width=80%}
+
+# Transfer learning
+
+1.  Learn word embeddings from a large text corpus. (1-100B words)
+(or download pre-trained embedding online)
+
+2. Transfer embedding to new task with a smaller training set. (say, 100k words)
+
+3. Optional: Continue to finetune the word embeddings with new data
