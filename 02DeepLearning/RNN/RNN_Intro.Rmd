@@ -381,9 +381,29 @@ geom_point(size=2, shape=21, fill="black") +
   geom_text(size=3, hjust = 0, nudge_y = 0.05, nudge_x = - 0.08)+
   annotate("segment", x = -1, xend = 1, y = 0.01, yend = -0.02, colour = "black", size=1, alpha=0.6, arrow=arrow())+
   annotate("segment", x = -0.95, xend = 0.97, y = 0.93, yend = 0.95, colour = "black", size=1, alpha=0.6, arrow=arrow())
- 
 ```
 
+# Cosine similarity
+
+$sim(e_w, e_{king}-e_{man}+e_{woman})$ = ?
+
+Cosine similarity: $sim(a,b) = \frac{a^{T}b}{ ||a||_{2} ||b||_{2}}$
+
+![](images/cosim.PNG){width=30%}
+
+# Cosine similarity
+
+$sim(e_w, e_{king}-e_{man}+e_{woman})$ = ?
+
+Cosine similarity: $sim(a,b) = \frac{a^{T}b}{ ||a||_{2} ||b||_{2}}$
+
+![](images/cosim.PNG){width=30%}
+
+```{r, message=F, fig.width=6, fig.height=4}
+theta=seq(0,pi,length = 100)
+cos_theta=cos(theta)
+plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
+```
 
 # Transfer learning
 
@@ -394,6 +414,3 @@ geom_point(size=2, shape=21, fill="black") +
 
 3. Optional: Continue to finetune the word embeddings with new data
 
-# Cosine similarity
-
-$sim(e_w, e_{king}-e_{man}+e_{woman})$
