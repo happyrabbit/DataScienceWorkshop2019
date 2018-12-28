@@ -367,6 +367,11 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 
 # Analogies
 
+$e_{man} - e_{woman} \approx e_{king} - e_{?}$ 
+
+$\rightarrow  \underset{w}{argmax} \{sim (e_{w}, e_{king} - e_{man} + e_{woman})\}$
+
+
 ```{r, message=F, fig.width=6, fig.height=4}
 require(grid)
 require(ggplot2)
