@@ -338,6 +338,48 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 
 ![](images/embedding10.PNG){width=80%}
 
+# Analogies
+
+- man $\longrightarrow$ woman $\approx$ king $\longrightarrow$  ?
+
+![](images/embedding6.PNG){width=80%}
+
+# Analogies
+
+- man $\longrightarrow$ woman $\approx$ king $\longrightarrow$  ?
+
+![](images/embedding8.PNG){width=80%}
+
+# Analogies
+
+- man $\longrightarrow$ woman $\approx$ king $\longrightarrow$  ?
+
+![](images/embedding11.PNG){width=80%}
+
+
+# Analogies
+
+- $e_{man} - e_{woman} = [-2, -0.01, 0.03, 0]^{T} \approx [-2, 0, 0, 0]^{T}$
+- $e_{king} - e_{queen} = [-1.92, -0.02, 0.01, -0.01]^{T} \approx [-2, 0, 0, 0]^{T}$
+
+![](images/embedding11.PNG){width=80%}
+
+
+# Analogies
+
+```{r, message=F, fig.width=6, fig.height=4}
+require(grid)
+require(ggplot2)
+d=data.frame(gender=c(-1, 1, -0.95, 0.97), loyal=c(0.01, -0.02, 0.93, 0.95))
+ggplot(d, aes(gender, loyal, label= c("man","woman","king","queen"))) + 
+geom_point(size=2, shape=21, fill="black") +
+  geom_text(size=3, hjust = 0, nudge_y = 0.05, nudge_x = - 0.08)+
+  annotate("segment", x = -1, xend = 1, y = 0.01, yend = -0.02, colour = "black", size=1, alpha=0.6, arrow=arrow())+
+  annotate("segment", x = -0.95, xend = 0.97, y = 0.93, yend = 0.95, colour = "black", size=1, alpha=0.6, arrow=arrow())
+ 
+```
+
+
 # Transfer learning
 
 1.  Learn word embeddings from a large text corpus. (1-100B words)
@@ -346,3 +388,7 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 2. Transfer embedding to new task with a smaller training set. (say, 100k words)
 
 3. Optional: Continue to finetune the word embeddings with new data
+
+# Cosine similarity
+
+$sim(e_w, e_{king}-e_{man}+e_{woman})$
