@@ -411,11 +411,11 @@ plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
 
 # Embedding matrix
 
-![](images/embedding12.PNG){width=100%}
+![](images/embedding12.PNG){width=80%}
 
 - In practice, we look up embedding instead of doing matrix multiplication.
 
-#  GloVe: global vectors for word representation
+# GloVe: global vectors for word representation
 
 # Transfer learning
 
