@@ -405,6 +405,10 @@ cos_theta=cos(theta)
 plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
 ```
 
+# Embedding matrix
+
+![](images/embedding12.PNG){width=100%}
+
 # Transfer learning
 
 1.  Learn word embeddings from a large text corpus. (1-100B words)
