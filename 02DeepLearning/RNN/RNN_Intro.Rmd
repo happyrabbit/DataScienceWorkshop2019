@@ -155,6 +155,15 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 
 ![](images/d_rnn.PNG){width=70%}
 
+# Vanishing gradients with RNNs
+
+- The kid, which ......, is cute
+- The kids, which ......, are cute
+
+![](images/gradients.PNG){width=70%}
+
+# Gated Recurrent Unit (GRU)
+
 # Word representation
 
 - Vacabulary = [a, aaron, ..., zulu, <UNK>], |V|=10,000
