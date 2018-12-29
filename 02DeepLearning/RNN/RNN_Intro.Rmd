@@ -409,6 +409,14 @@ plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
 
 ![](images/embedding12.PNG){width=100%}
 
+# Embedding matrix
+
+![](images/embedding12.PNG){width=100%}
+
+- In practice, we look up embedding instead of doing matrix multiplication.
+
+#  GloVe: global vectors for word representation
+
 # Transfer learning
 
 1.  Learn word embeddings from a large text corpus. (1-100B words)
