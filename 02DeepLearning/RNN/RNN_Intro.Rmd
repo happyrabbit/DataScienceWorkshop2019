@@ -164,6 +164,16 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 
 # Gated Recurrent Unit (GRU)
 
+\begin{array}{cc}
+GRU & LSTM\\
+\tilde{c}^{<t>}=tanh(W_{c}[\Gamma_{r}*c^{<t-1>},x^{<t>}]+b_{c})\ \ \ \  & \tilde{c}^{<t>}=tanh(W_{c}[a^{<t-1>},x^{<t>}]+b_{c})\\
+\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})\ \ \ \  & \Gamma_{u}=\sigma(W_{u}[a^{<t-1>},x^{<t>}]+b_{u})\\
+\Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})\ \ \ \  & \Gamma_{f}=\sigma(W_{f}[a^{<t-1>},x^{<t>}]+b_{f})\\
+ & \Gamma_{0}=\sigma(W_{0}[a^{<t-1>},x^{<t>}]+b_{0})\\
+c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+(1-\Gamma_{u})*c^{<t-1>\ \ \ \ } & c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+\Gamma_{f}*c^{<t-1>}\\
+a^{<t>}=c^{<t>}\ \ \ \  & a^{<t>}=\Gamma_{0}*c^{<t>}
+\end{array}
+
 # Word representation
 
 - Vacabulary = [a, aaron, ..., zulu, <UNK>], |V|=10,000
