@@ -157,12 +157,29 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 
 # Vanishing gradients with RNNs
 
-- The kid, which ......, is cute
-- The kids, which ......, are cute
+- The cat, which ate already, was full.
+- The cats, which ate already, were cute.
 
 ![](images/gradients.PNG){width=70%}
 
 # Gated Recurrent Unit (GRU)
+
+- Another way to draw rnn unit
+
+$a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a)$
+
+![](images/rnn_unit.PNG){width=70%}
+
+# Gated Recurrent Unit (GRU)
+
+- Another way to draw rnn unit
+
+$a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a) \longleftarrow tanh$
+
+![](images/rnn_unit.PNG){width=70%}
+
+
+# Long Short Term Memory (LSTM)
 
 \begin{array}{cc}
 GRU & LSTM\\
