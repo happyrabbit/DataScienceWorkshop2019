@@ -178,6 +178,91 @@ $a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a) \longleftarrow tanh$
 
 ![](images/rnn_unit.PNG){width=70%}
 
+# GRU
+
+- The **cat**, ......, **was** full.
+
+> - c=memory cell
+> - $\longrightarrow c^{<t>}=a^{<t>}$
+> - $\longrightarrow \tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
+> - $\longrightarrow \Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+
+# GRU
+
+- The **cat**, ......, **was** full.
+
+The $\longleftarrow c^{<t>}=0$, $\Gamma_u = 0$
+
+cat $\longleftarrow c^{<t>}=1$, $\Gamma_u = 1$
+
+which $\longleftarrow c^{<t>}=1$, $\Gamma_u = 0$
+
+...
+
+was $\longleftarrow c^{<t>}=1$, $\Gamma_u = 0$
+
+# GRU
+
+- The **cat**, ......, **was** full.
+
+> - c = memory cell
+> - $\longrightarrow c^{<t>}=a^{<t>}$
+> - $\longrightarrow \tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
+> - $\longrightarrow \Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+> - $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+
+# Full GRU
+
+$c^{<t>}=a^{<t>}$
+
+$\tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
+
+$\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+
+</br>
+
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+
+
+# Full GRU
+
+$c^{<t>}=a^{<t>}$
+
+$\tilde{c}^{<t>}=tanh(W_{c}[\ \ \ \ \ \ \ c^{<t-1>},x^{<t>}]+b_{c})$
+
+$\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+
+</br>
+
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+
+
+# Full GRU
+
+$c^{<t>}=a^{<t>}$
+
+$\tilde{c}^{<t>}=tanh(W_{c}[\Gamma_r* c^{<t-1>},x^{<t>}]+b_{c})$
+
+$\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+
+</br>
+
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+
+
+# Full GRU
+
+$c^{<t>}=a^{<t>}$
+
+$\tilde{c}^{<t>}=tanh(W_{c}[\Gamma_r* c^{<t-1>},x^{<t>}]+b_{c})$
+
+$\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+
+$\Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})$
+
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+
+
 
 # Long Short Term Memory (LSTM)
 
