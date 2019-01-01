@@ -186,6 +186,7 @@ $a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a) \longleftarrow tanh$
 > - $\longrightarrow c^{<t>}=a^{<t>}$
 > - $\longrightarrow \tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
 > - $\longrightarrow \Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
+> - $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
 
 # GRU
 
