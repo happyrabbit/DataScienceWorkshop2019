@@ -14,3 +14,20 @@ The primary audiences for this course are:
 (2) statistician in government agencies;   
 (3) statistical researchers in universities;   
 (4) graduate students in statistics departments. The prerequisite knowledge is MS level education in statistics and entry level of R knowledge. No software installation is needed in students’ laptop and the cloud platform is easily accessed through browsers such as Chrome or Firefox with internet connection.
+
+## Schedule
+
+
+| Topic | Time |
+| :---: | :---: |
+| Introduction | 8:00 - 8:45 |
+| Deep Learning 1 | 8:45 - 9:45 |
+| Break | 9:45 - 10:00 |
+| Deep Learning 2&3	| 10:00 - 12:00 |
+| Lunch break |	12:00 - 13:30 |
+| Deep Learning Hands on Session |	13:30 - 15:00 |
+| Break	| 15:00 - 15:15 |
+| Big Data Cloud Platform Lecture and hands on | 15:15 - 16:00 |
+| Analytical dashboard and report |	16:00 - 16:30 |
+| Soft Skill and Project Cycle |	16:30 - 17:15 |
+| Q&A |	17:15 - 17:30 |
