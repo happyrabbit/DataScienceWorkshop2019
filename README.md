@@ -31,3 +31,23 @@ The primary audiences for this course are:
 | Analytical dashboard and report |	16:00 - 16:30 |
 | Soft Skill and Project Cycle |	16:30 - 17:15 |
 | Q&A |	17:15 - 17:30 |
+
+# Some links
+
+Course homepage: https://course2019.netlify.com/ 
+Databrick free community edition account open: link
+Perceptron notebook: link
+Adaline notebook: link
+Feedforward neural network notebook: link
+Convolutional neural network notebook: link 
+Recurrent neural network notebook: link
+Big Data Platform notebook: link
+Data preprocessing notebook: link 
+Data wrangling notebook: link 
+Industry recommendations for academic data science programs: link
+Deep Learning Using R, François Chollet with J. J. Allaire, ISBN 9781617295546 (2018)
+Python Machine Learning by Sebastian Raschka, ISBN-13: 978-1787125933 (2018)
+https://keras.rstudio.com/ 
+http://spark.rstudio.com/
+https://databricks.com/spark/about
+https://github.com/onnx/onnx 

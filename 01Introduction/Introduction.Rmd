@@ -18,29 +18,25 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction |  8:30 - 8:50 |
-| Deep Learning Lecture | 8:50 - 10:00 |
-| Break | 10:00 - 10:15 |
-| Databricks account setup | 10:15 - 10:30 |
-| Deep Learning Lecture | 10:30 - 11:30 |
-| Deep Learning Hands on Session | 11:30 - 12:00 |
-| Lunch break @ Gallery A-B | 12:00 - 13:00 |
-| Deep Learning Hands on Session | 13:00 - 13:30 |
-| Data Preprocessing & Wrangling | 13:30 - 14:30 |
-| Big Data Cloud Platform Lecture | 14:30 - 15:10 |
-| Break | 15:10 - 15:30 |
-| Big Data Cloud Platform Hands on | 15:30 - 16:30 |
-| Analytical dashboard and report | 16:30 - 17:00 |
-| Soft Skill and Project Cycle | 17:00 - 17:30 |
+| Introduction | 8:00 - 8:45 |
+| Deep Learning 1 | 8:45 - 9:45 |
+| Break | 9:45 - 10:00 |
+| Deep Learning 2&3	| 10:00 - 12:00 |
+| Lunch break |	12:00 - 13:30 |
+| Deep Learning Hands on Session |	13:30 - 15:00 |
+| Break	| 15:00 - 15:15 |
+| Big Data Cloud Platform Lecture and hands on | 15:15 - 16:00 |
+| Analytical dashboard and report |	16:00 - 16:30 |
+| Soft Skill and Project Cycle |	16:30 - 17:15 |
+| Q&A |	17:15 - 17:30 |
 
 # Slides 
 
 <center>
 <font size = "10">
-https://github.com/happyrabbit/DataScienceWorkshop2018
+https://github.com/happyrabbit/DataScienceWorkshop2019
 </font>
 </center>
-
 
 
 # The term no one really defined
@@ -52,34 +48,70 @@ https://github.com/happyrabbit/DataScienceWorkshop2018
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
+#  What is “hard-core pornography”?
 
-# What is a data scientist?
+- Obscenity case of Jacobellis v. Ohio (1964)
 
-Here is a list of definitions for a “data scientist”:
+#  What is “hard-core pornography”?
 
-- “A data scientist is a data analyst who lives in California”
-- “A data scientist is someone who is better at statistics than any software engineer and better - at software engineering than any statistician.”
-- “A data scientist is a statistician who lives in San Francisco.”
-- “Data Science is statistics on a Mac.”
+- Obscenity case of Jacobellis v. Ohio (1964)
 
-# What is data science?
+> “I know it when I see it. (Potter Stewart)”
 
-![](images/datasciencerole.png){width=100%}
+# Three tracks of data science
 
-Credit to: [Why businesses fail at machine learning](https://hackernoon.com/why-businesses-fail-at-machine-learning-fbff41c4d5db)
+- Engineering: the process of making everything else possible
 
-# Different roles in data science
+- Analysis: the process of turning raw information into insights in a fast way
 
-- Researchers: build cutting-edge appliances
-- Decision-makers and product managers:  figure out what’s worth cooking / what the objectives are
-- Domain experts and social scientists: understand the suppliers and the customers 
-- Data engineer and analysts: process ingredients at scale 
-- Applied ML engineers: try many different ingredient-appliance combinations quickly to generate potential recipes
-- Statisticians: check that the quality of the recipe is good enough to serve 
-- Software engineers: turn a potential recipe into millions of dishes served efficiently 
-- Project/program managers: keep the interdisciplinary team on track
-- Reliability engineers: ensure that your dishes stay top notch even if the delivery truck brings you a ton of potatoes instead of the rice you ordered 
+- Modeling: the process of diving deeper into the data to discover the pattern we don't easily see
 
+
+(It is a group work from https://github.com/happyrabbit/academic_advisory/blob/master/authors.md !)
+
+# Engineering
+
+# Analysis
+
+# Modeling
+
+# Three tracks of data science
+
+<img src="images/tracks.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
+
+# Three tracks of data science
+
+<img src="images/tracks2.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
+
+# Three tracks of data science
+
+<img src="images/tracks3.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
+
+# What can (should) data science do?
+
+> - Make human better human by alleviating bounded rationality and minimize politics/emotion (rather than make machine more like human)
+
+> - Strive for the “democratization” of data as legally possible: empower everyone in the organization to acquire, process, and leverage data in a timely and efficient fashion
+
+# Data Science Hierarchy of Needs
+
+<img src="images/ds_need.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
+
+# Data Science Types v.s Needs
+
+<img src="images/ds_types.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
+
+# Data Science Types v.s Needs
+
+<img src="images/ds_types1.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
+
+# Data Science Types v.s Needs
+
+<img src="images/ds_types2.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
+
+# Data Science Types v.s Needs
+
+<img src="images/ds_types3.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
 
 # Types of Questions
 
@@ -110,7 +142,6 @@ Credit to: [Why businesses fail at machine learning](https://hackernoon.com/why-
     - What is the projected net income for the next season?
     - How much inventory should we have? 
 
-
 # Types of Learning
 
 - Supervised Learning
@@ -122,54 +153,6 @@ Credit to: [Why businesses fail at machine learning](https://hackernoon.com/why-
     - Clustering
 
 - Transfer Learning 
-
-# Types of Algorithm (1)
-
-- Regression
-    - Ordinary Least Squares
-    - Logistic Regression
-    - Multivariate Adaptive Regression Splines (MARS)
-    
-- Instance-based Methods
-    - k-Nearest Neighbour (kNN)
-    
-- Regularization Methods
-    - Ridge Regression
-    - LASSO
-    - Elastic Net
-    
-- Decision Tree
-    - Classification and Regression Tree (CART)
-    - Bootstrapped Aggregation (Bagging)
-    - Random Forest
-    - Gradient Boosting Machines (GBM)
-    
-# Types of Algorithm (2)
-
-- Bayesian
-    - Naive Bayes
-    - Bayesian Belief Network (BBN)
-    
-- Kernel Methods
-    - Support Vector Machines (SVM)
-    - Linear Discriminate Analysis (LDA)
-    
-- Association Rule Learning
-    - Apriori algorithm
-    - Eclat algorithm
-    
-# Types of Algorithm (3)
-
-
-- Neural Network and Deep Learning
-    - Feed Forward Neural Network (FFNN)
-    - Convolutional Neural Network (CNN)
-    - Recurrent Neural Network (RNN)
-    
-- Dimensionality Reduction
-    - Principal Component Analysis (PCA)
-    - Partial Least Squares Regression (PLS)
-    - Multidimensional Scaling (MDS)
 
 
 # Data Scientist Skill Set
