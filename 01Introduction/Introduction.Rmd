@@ -71,6 +71,13 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 # Engineering
 
+(1) Data environment: data storage, Kafka platform, Hadoop and Spark cluster etc.
+
+(2) Data management:   
+Automated  is a common task which includes parsing the logs (depending on the stage of the company and the type of industry you are in), web scraping, API queries, and interrogating data streams. Determine and construct data schema to support analytical and modeling need. Use tools, processes, guidelines to ensure data is correct, standardized and documented.
+(3) Production
+If you want to integrate the model or analysis into the production system, then you have to automate all data handling steps. It involves the whole pipeline from data access to preprocessing, modeling and final deployment. It is necessary to make the system work smoothly with all existing stacks. So it requires to monitor the system through some sort of robust measures, such as rigorous error handling, fault tolerance, and graceful degradation to make sure the system is running smoothly and the users are happy.
+
 # Analysis
 
 # Modeling
@@ -185,3 +192,5 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
 
 - [Big Data with R](https://www.dropbox.com/sh/8t4k8lgk0su3gjb/AAD4GwWUhUj7bdkmw0j7FPWNa/bigdataclass2018?dl=0)
+
+
