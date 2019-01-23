@@ -4,19 +4,23 @@ With recent big data, data science and deep learning revolution, enterprises ran
 
 The big data platform, data science, and deep learning overviews are specifically designed for audience with statistics education background. The data science workflow, pitfalls and soft skills are highlight through real-world data science and machine learning problems. The Databricks community edition cloud platform will be used throughout the training course to cover hands-on sessions including: 
 
-(1) big data platform using Spark through R sparklyr package;   
-(2) introduction to Deep Neural Network, Convolutional Neural Network and Recurrent Neural Networks and their applications;  
-(3) deep learning examples using TensorFlow through R keras package.   
+(1) Big data platform using Spark through R sparklyr package;   
+
+(2) Introduction to Deep Neural Network, Convolutional Neural Network and Recurrent Neural Networks and their applications;  
+
+(3) Deep learning examples using TensorFlow through R keras package.   
 
 The primary audiences for this course are: 
 
-(1) statistician in traditional industry sectors such as manufacturing, pharmaceutical and banking;   
-(2) statistician in government agencies;   
-(3) statistical researchers in universities;   
-(4) graduate students in statistics departments. The prerequisite knowledge is MS level education in statistics and entry level of R knowledge. No software installation is needed in students’ laptop and the cloud platform is easily accessed through browsers such as Chrome or Firefox with internet connection.
+(1) Statistician in traditional industry sectors such as manufacturing, pharmaceutical and banking; 
 
-## Schedule
+(2) Statistician in government agencies; 
 
+(3) Statistical researchers in universities;  
+
+(4) Graduate students in statistics departments. The prerequisite knowledge is MS level education in statistics and entry level of R knowledge. No software installation is needed in students’ laptop and the cloud platform is easily accessed through browsers such as Chrome or Firefox with internet connection. 
+
+# Schedule
 
 | Topic | Time |
 | :---: | :---: |
@@ -35,16 +39,16 @@ The primary audiences for this course are:
 # Some links
 
 - Course homepage: https://course2019.netlify.com/ 
-- Databrick free community edition account open: link
-- Perceptron notebook: link
-- Adaline notebook: link
-- Feedforward neural network notebook: link
-- Convolutional neural network notebook: link 
-- Recurrent neural network notebook: link
-- Big Data Platform notebook: link
-- Data preprocessing notebook: link 
-- Data wrangling notebook: link 
-- Industry recommendations for academic data science programs: link
+- [Databrick free community edition account](https://accounts.cloud.databricks.com/registration.html#signup/community)
+- [Perceptron notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/2761297084239405/1806228006848429/latest.html)
+- [Adaline notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/2761297084239426/1806228006848429/latest.html)
+- [Feedforward neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058030/1806228006848429/latest.html)
+- [Convolutional neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058129/1806228006848429/latest.html) 
+- [Recurrent neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058228/1806228006848429/latest.html)
+- [Big Data Platform notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3725396058299890/1806228006848429/latest.html)
+- [Data preprocessing notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474646/1806228006848429/latest.html)
+- [Data wrangling notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474687/1806228006848429/latest.html)
+- [Industry recommendations for academic data science programs](https://github.com/brohrer/academic_advisory)
 - Deep Learning Using R, François Chollet with J. J. Allaire, ISBN 9781617295546 (2018)
 - Python Machine Learning by Sebastian Raschka, ISBN-13: 978-1787125933 (2018)
 - https://keras.rstudio.com/ 
