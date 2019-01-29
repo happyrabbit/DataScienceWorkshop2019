@@ -73,14 +73,25 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 (1) Data environment: data storage, Kafka platform, Hadoop and Spark cluster etc.
 
-(2) Data management:   
-Automated  is a common task which includes parsing the logs (depending on the stage of the company and the type of industry you are in), web scraping, API queries, and interrogating data streams. Determine and construct data schema to support analytical and modeling need. Use tools, processes, guidelines to ensure data is correct, standardized and documented.
-(3) Production
-If you want to integrate the model or analysis into the production system, then you have to automate all data handling steps. It involves the whole pipeline from data access to preprocessing, modeling and final deployment. It is necessary to make the system work smoothly with all existing stacks. So it requires to monitor the system through some sort of robust measures, such as rigorous error handling, fault tolerance, and graceful degradation to make sure the system is running smoothly and the users are happy.
+(2) Data management:  parsing the logs, web scraping, API queries, and interrogating data streams. 
+
+(3) Production: integrate model and analysis into the production system
 
 # Analysis
 
+(1) Domain knowledge
+
+(2) Exploratory analysis
+
+(3) Story telling
+
 # Modeling
+
+(1) Supervised learning
+
+(2) Unsupervised learning
+
+(3) Customized model development
 
 # Three tracks of data science
 
@@ -148,19 +159,6 @@ If you want to integrate the model or analysis into the production system, then 
     - What will be the temperature tomorrow?
     - What is the projected net income for the next season?
     - How much inventory should we have? 
-
-# Types of Learning
-
-- Supervised Learning
-    - Input data labeled
-    - Classification and regression
-
-- Unsupervised Learning
-    - Input data not labeled
-    - Clustering
-
-- Transfer Learning 
-
 
 # Data Scientist Skill Set
 
