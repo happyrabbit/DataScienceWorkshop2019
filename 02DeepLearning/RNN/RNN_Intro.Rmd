@@ -158,7 +158,7 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 # Vanishing gradients with RNNs
 
 - The cat, which ate already, was full.
-- The cats, which ate already, were cute.
+- The cats, which ate already, were full.
 
 ![](images/gradients.PNG){width=70%}
 
