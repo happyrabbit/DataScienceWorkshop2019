@@ -77,6 +77,14 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 (3) Production: integrate model and analysis into the production system
 
+# Engineering - Production 
+
+![](images/integration.png){width=70%}
+
+# Data Pipeline
+
+![](images/nf_pipeline.png){width=80%}
+
 # Analysis
 
 (1) Domain knowledge
@@ -160,19 +168,11 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
     - What is the projected net income for the next season?
     - How much inventory should we have? 
 
-# Data Scientist Skill Set
-
-![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
-
-
-
-# General Process 
+# General Process of Modeling/Analytics
 
 ![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
 
-# Automatic Data Science Pipeline
 
-![](http://scientistcafe.com/book/Figure/DataPipeline.png){width=100%}
 
 # Some links
 
