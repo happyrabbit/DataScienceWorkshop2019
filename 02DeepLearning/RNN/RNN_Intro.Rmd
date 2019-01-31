@@ -1,10 +1,10 @@
 ---
 title: "Recurrent Neural Networks"
-author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](../CNN/images/netlifylogo.png){width=15%}'
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
-    footer: "http://scientistcafe.com"
+    footer: "https://course2019.netlify.com"
 ---
 
 ```{r setup, include=FALSE}
@@ -121,6 +121,14 @@ Zulu[10000]
 # What is RNN?
 
 ![](images/rnn1.PNG){width=60%}
+
+- x: Use($x^{<1>}$)  Netlify($x^{<2>}$) and($x^{<3>}$) Hugo($x^{<4>}$) .($x^{<5>}$) 
+
+- y: 0 ($y^{<1>}$)  1($y^{<2>}$) 0($y^{<3>}$) 1($y^{<4>}$) 0($y^{<5>}$)
+
+- $x^{(i)<t>}$, $T_x^{(i)}$ ($i^{th}$ sample)
+
+- $y^{(i)<t>}$, $T_y^{(i)}$ ($i^{th}$ sample)
 
 # What is RNN?
 

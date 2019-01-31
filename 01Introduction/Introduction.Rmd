@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](http://scientistcafe.com/images/netlifylogo.png){width=15%}'
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output:
   slidy_presentation:
@@ -67,7 +67,7 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 - Modeling: the process of diving deeper into the data to discover the pattern we don't easily see
 
 
-(It is a group work from https://github.com/happyrabbit/academic_advisory/blob/master/authors.md !)
+(It is a group work from https://github.com/brohrer/academic_advisory/blob/master/authors.md !)
 
 # Engineering
 
@@ -101,6 +101,10 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 (3) Customized model development
 
+# General Process of Modeling/Analytics
+
+![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
+
 # Three tracks of data science
 
 <img src="images/tracks.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
@@ -112,6 +116,10 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 # Three tracks of data science
 
 <img src="images/tracks3.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
+
+# [Data Science Curriculum Roadmap](https://github.com/brohrer/academic_advisory/blob/master/curriculum_roadmap.md)
+
+<img src="images/DS_Curriculum.PNG" alt="HTML5 Icon" style="width:950px;height:550px;">
 
 # What can (should) data science do?
 
@@ -160,19 +168,13 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 - Classification:
     - Who is more likely to buy our product?
-    -  Is the borrower going to pay back?
-    -  Is it a spam?
+    - Is the borrower going to pay back?
+    - Is it a spam?
 
 - Regression:
     - What will be the temperature tomorrow?
     - What is the projected net income for the next season?
     - How much inventory should we have? 
-
-# General Process of Modeling/Analytics
-
-![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
-
-
 
 # Some links
 
