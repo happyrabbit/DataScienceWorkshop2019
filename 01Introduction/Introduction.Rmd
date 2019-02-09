@@ -147,7 +147,7 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 <img src="images/ds_types3.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">
 
-# Types of Questions
+# Types of Questions (Modeling/Analytics)
 
 - Comparison: 
     - Are males more inclined to buy our products than females?
@@ -164,7 +164,7 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
     - Which printer performs similar pattern to the broken ones?
     - How many different themes are there in the corpus?
 
-# Types of Questions
+# Types of Questions (Modeling/Analytics)
 
 - Classification:
     - Who is more likely to buy our product?

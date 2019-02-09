@@ -130,10 +130,6 @@ Zulu[10000]
 
 - $y^{(i)<t>}$, $T_y^{(i)}$ ($i^{th}$ sample)
 
-# What is RNN?
-
-![](images/rnn1_2.PNG){width=60%}
-
 # Forward Propagation
 
 ![](images/rnn1_2.PNG){width=60%}
@@ -194,7 +190,7 @@ $a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a) \longleftarrow tanh$
 > - $\longrightarrow c^{<t>}=a^{<t>}$
 > - $\longrightarrow \tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
 > - $\longrightarrow \Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
-> - $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+> - $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 # GRU
 
@@ -216,7 +212,7 @@ was $\longleftarrow c^{<t>}=1$, $\Gamma_u = 0$
 - $\longrightarrow c^{<t>}=a^{<t>}$
 - $\longrightarrow \tilde{c}^{<t>}=tanh(W_{c}[c^{<t-1>},x^{<t>}]+b_{c})$
 - $\longrightarrow \Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
-- $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+- $\longrightarrow c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 ![](images/gru_unit.PNG){width=60%}
 
@@ -230,7 +226,7 @@ $\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
 
 </br>
 
-$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 
 # Full GRU
@@ -243,7 +239,7 @@ $\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
 
 </br>
 
-$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 
 # Full GRU
@@ -256,7 +252,7 @@ $\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
 
 </br>
 
-$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 # Full GRU
 
@@ -268,7 +264,7 @@ $\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
 
 $\Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})$
 
-$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1+\Gamma_u) + c^{<t-1>}$
+$c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 
 # Long Short Term Memory (LSTM)
 
