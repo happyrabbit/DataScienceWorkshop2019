@@ -1,0 +1,30 @@
+---
+title: "Neural Networks and Deep Learning"
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+date: "`r Sys.Date()`"
+output: 
+  slidy_presentation: 
+    footer: "https://course2019.netlify.com"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Types of Neural Network 
+
+<center>
+![](../CNN/images/NN_EXP.png){width=80%}
+</center>
+
+# Neural Network Application
+
+| Input (x) | Output (y) | Application |
+| :---: |  :---:  |  :---: |
+| **Home features** | **Price** | **Real Estate** |
+| **Ad, user info** | **Click on an Ad? (0/1)** | **Online Advertising** |
+| Image | Object (1, ..., 10) | Photo tagging |
+| Image, Radar info | Position of other cars | Autonomous driving |
+| Audio | Text transcript | Speech recognition |
+| English | Chinese | Machine translation |
+| Voice | Voice | Human computer conversation |
