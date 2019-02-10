@@ -178,7 +178,7 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 # Some links
 
-- [Deep Learning Specialization from COURSERA](https://www.coursera.org/specializations/deep-learning)
+- The deep learning slides are based on Andrew Ng's course: [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
 
 - [Industry recommendations for academic data science programs](https://github.com/brohrer/academic_advisory)
 
