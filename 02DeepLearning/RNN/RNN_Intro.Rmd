@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
     footer: "https://course2019.netlify.com"
+    duration: 60
 ---
 
 ```{r setup, include=FALSE}

@@ -5,9 +5,31 @@ date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
     footer: "https://course2019.netlify.com"
+    duration: 60
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Why train embedding?
+
+- Embedding depends on the task: movie review sentiment analysis v.s. legal document classification
+- Keras makes it easy to train your own embedding (`layer_embeeding`)
+- Use pre-trained word embedding
+    - word2vec, 2013:  https://arxiv.org/pdf/1301.3781.pdf
+    - Global Vectors for Word Representation (GloVe, 2014): https://nlp.stanford.edu/projects/glove/
+
+# Learn word embedding
+
+![](images/embedding_train1.PNG){width=80%}
+ 
+# Learn word embedding
+
+![](images/embedding_train2.PNG){width=80%}
+
+# Learn word embedding
+
+![](images/embedding_train3.PNG){width=80%}
+
+# Other context/tartget pairs
