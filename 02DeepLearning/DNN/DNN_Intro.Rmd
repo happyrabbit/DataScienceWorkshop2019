@@ -27,4 +27,34 @@ knitr::opts_chunk$set(echo = FALSE)
 | Image, Radar info | Position of other cars | Autonomous driving |
 | Audio | Text transcript | Speech recognition |
 | English | Chinese | Machine translation |
-| Voice | Voice | Human computer conversation |
+| Voice  | Voice | Human computer conversation |
+
+# Why is deep learning taking off?
+
+- Scale, scale, scale
+
+![](images/dl_driver1.png){width=90%}
+
+# Why is deep learning taking off?
+
+![](images/dl_driver2.png){width=90%}
+
+# Why is deep learning taking off?
+
+![](images/dl_driver3.png){width=90%}
+
+# Why is deep learning taking off?
+
+![](images/dl_driver4.png){width=90%}
+
+# Why is deep learning taking off?
+
+![](images/dl_driver5.png){width=90%}
+
+# Why is deep learning taking off?
+
+![](images/dl_driver6.png){width=90%}
+
+
+# Logistic Regression as a Neural Network
+

@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
     footer: "https://course2019.netlify.com"
-    duration: 60
+    duration: 20
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +20,9 @@ knitr::opts_chunk$set(echo = FALSE)
     - word2vec, 2013:  https://arxiv.org/pdf/1301.3781.pdf
     - Global Vectors for Word Representation (GloVe, 2014): https://nlp.stanford.edu/projects/glove/
 
-# Learn word embedding
+# Learn word embedding[^1]
+
+[^1]: Bengio et. al., 2003, A neural probabilistic language model
 
 ![](images/embedding_train1.PNG){width=80%}
  
@@ -32,4 +34,60 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](images/embedding_train3.PNG){width=80%}
 
-# Other context/tartget pairs
+# Other context/target pairs
+
+I want a glass of orange <span style="color:purple"> **juice**</span> to go alone with my cereal.
+
+Context: 
+
+- Last 4 words:  <span style="color:purple">a glass of orange $\longrightarrow$   ? </span> 
+- 4 words on the left & right:  <span style="color:purple">a glass of orange ? to go alone with </span> 
+- Last 1 word: <span style="color:purple">orange $\longrightarrow$  ?</span> 
+- Nearby 1 word (skip gram model): <span style="color:purple">glass $\longrightarrow$  ?</span> 
+
+# Word2Vec[^2]: Skip-grams
+
+[^2]: Mikolov et. al., 2013. Efficient estimation of word representations in vector space
+
+_Come up with a few context to target pairs to create our supervised learning problem_
+
+**Rule: randomly pick a word as context word; randomly pick another word within some window ($\pm 3$) as target word**
+
+<center>
+
+> I want a glass of orange juice to go along with my cereal.
+
+
+
+| Context | Target |
+| :------: | :------: |
+| orange | juice |
+| orange | glass |
+| orange | go |
+| ...| ... |
+
+</center>
+
+# Word2Vec: Model
+
+<center>
+| Context | $\longrightarrow$ | Target |
+| :------: | :------: | :------: |
+| c ("orange") | $\longrightarrow$  | t ("juice") |
+</center>
+
+ $$O_c \rightarrow E \rightarrow e_c \rightarrow softmax \rightarrow \hat{y}$$
+ 
+
+$$Softmax: p(t|c)= \frac{e^{\theta_t^Te_c}}{\Sigma_{j=1}^{10,000}e^{\theta_j^Te_c}}$$
+
+$$L(\hat{y}, y)=-\Sigma_{i=1}^{10,000} y_i log\hat{y}_i$$
+
+- Parameters:
+    - $\theta_t$:parameter associated with output t
+    - E: embedding matrix
+
+# Problems with softmax classification
+
+
+

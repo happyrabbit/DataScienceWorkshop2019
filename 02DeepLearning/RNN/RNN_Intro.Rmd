@@ -466,7 +466,9 @@ Man & Woman & King & Queen & Apple & Pumpkin\\
 
 ![](images/embedding10.PNG){width=80%}
 
-# Analogies
+# Analogies[^1]
+
+[^1]: Mikolov et. al., 2013, Linguistic regularities in continuous space word representations
 
 - man $\longrightarrow$ woman $\approx$ king $\longrightarrow$  ?
 
@@ -543,12 +545,12 @@ plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
 
 - In practice, we look up embedding instead of doing matrix multiplication.
 
-# Transfer learning
+# 2019 AI/ML[^AI2019]
 
-1.  Learn word embeddings from a large text corpus. (1-100B words)
-(or download pre-trained embedding online)
+[^AI2019]: [AI predictions for 2019 from Yann LeCun, Hilary Mason, Andrew Ng, and Rumman Chowdhury](https://venturebeat.com/2019/01/02/ai-predictions-for-2019-from-yann-lecun-hilary-mason-andrew-ng-and-rumman-chowdhury/)
 
-2. Transfer embedding to new task with a smaller training set. (say, 100k words)
+Andrew Ng: 
 
-3. Optional: Continue to finetune the word embeddings with new data
-
+- Next massive wave of value creation: manufacturing/agriculture devices company/health care company
+- AI that can arrive at accurate conclusions with less data, something called “few shot learning” by some in the field
+- "generalizability" in computer vision: human radiologists are much better at generalizing
