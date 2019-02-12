@@ -176,6 +176,47 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
     - What is the projected net income for the next season?
     - How much inventory should we have? 
 
+# Where does data science belong in your organization?
+
+<center>**A standalone team** </center>
+
+- An autonomous unit parallel to engineering
+- A strategic differentiator for the organization
+- The head of data science unit should ideally report into the CEO or at least report into someone who understands data strategy and is willing to invest to give it what it needs. 
+- Pros: 
+    - autonomy
+    - well positioned to tackle whatever problems it deems most valuable 
+    - knowledge share and grow
+    - attract/retain talent
+- Cons: risk of marginalization
+
+# Where does data science belong in your organization?
+
+<center>**An embedded model**</center>
+
+- Bring in talented people and farms them out to the rest of the company. There’s still a head of data science, but he/she is mostly a hiring manager and coach.
+- Give up autonomy to ensure utility
+- Pros: 
+    - closer to applications
+    - flexibility
+- Cons: 
+    - hard to attract/retain talent 
+    - their embedded team leads don’t feel responsible for their growth and happiness, while their managers won’t feel directly vested in their work
+    - data scientists are second-class citizens everywhere
+
+# Where does data science belong in your organization?
+
+<center>**Integrated team**</center>
+
+- No separate data science team; each team hires and manages its own data scientists.
+- Pros: 
+    - optimizes for organizational alignment; 
+- Cons: 
+    - dilutes the identity of data science; 
+    - hurt data scientist's career growth; 
+    - sacrifice the flexibility of the embedded model
+
+
 # Some links
 
 - The deep learning slides are based on Andrew Ng's course: [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning): Super awesome!
