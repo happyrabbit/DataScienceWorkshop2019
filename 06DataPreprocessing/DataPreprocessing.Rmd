@@ -1,0 +1,218 @@
+---
+title: "Data Pre-processing"
+author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](http://scientistcafe.com/images/netlifylogo.png){width=15%}'
+date: "`r Sys.Date()`"
+output: 
+  slidy_presentation: 
+    footer: "https://scientistcafe.com"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Data can be dirty and usually is!
+
+<center>
+![](http://scientistcafe.com/images/dataclean.png){width=50%}
+</center>
+
+
+# Data types
+
+1. Raw data
+2. Technically correct data
+3. Data that is proper for the model
+4. Summarized data
+5. Data with fixed format
+
+# Preprocessing Map
+
+![](http://scientistcafe.com/book/Figure/DataPre-processing.png){width=90%}
+
+# Data Cleaning
+
+- Do you see any problems?
+
+```r
+sim.dat <- read.csv("https://raw.githubusercontent.com/happyrabbit/DataScientistR/master/Data/SegData.csv ")
+summary(sim.dat)
+```
+
+# Data Cleaning
+
+- How to deal with that? 
+
+```r
+# set problematic values as missings
+sim.dat$age[which(sim.dat$age>100)]<-NA
+sim.dat$store_exp[which(sim.dat$store_exp<0)]<-NA
+# see the results
+summary(subset(sim.dat,select=c("age","income")))
+```
+
+# Missing Values
+
+- Is there any auxiliary information?
+- Is missing a random occurrence?
+- What is the purpose of modeling?
+
+# Missing Values: median/mode
+
+- `impute()` function in `imputeMissings` package
+
+```r
+# save the result as another object
+demo_imp<-impute(sim.dat,method="median/mode")
+# check the first 5 columns, there is no missing values in other columns
+summary(demo_imp[,1:5])
+```
+
+- `preProcess()` function in `caret` package
+
+```r
+imp<-preProcess(sim.dat,method="medianImpute")
+demo_imp2<-predict(imp,sim.dat)
+summary(demo_imp2[,1:5])
+```
+
+# Missing Values: K-nearest neighbors
+
+- `preProcess()` function in `caret` package
+
+```r
+imp<-preProcess(sim.dat,method="knnImpute",k=5)
+# need to use predict() to get KNN result
+demo_imp<-predict(imp,sim.dat)
+```
+
+# Solve the problem
+
+- Reason: `sim.dat` has non-numeric variables
+- Solution:
+
+```r
+# find factor columns
+imp<-preProcess(sim.dat,method="knnImpute",k=5)
+idx<-which(lapply(sim.dat,class)=="factor")
+demo_imp<-predict(imp,sim.dat[,-idx])
+summary(demo_imp[,1:3])
+```
+
+# Missing Values: Bagging Tree
+
+- Bagging (Bootstrap aggregating) 
+- Powerful
+- Computation is much more intense than KNN
+
+```r
+imp<-preProcess(sim.dat,method="bagImpute")
+demo_imp<-predict(imp,sim.dat)
+summary(demo_imp[,1:5])
+```
+
+# Centering and Scaling
+
+- Easy to DIY
+
+```r
+income<-sim.dat$income
+# calculate the mean of income
+mux<-mean(income,na.rm=T)
+# calculate the standard deviation of income
+sdx<-sd(income,na.rm=T)
+# centering
+tr1<-income-mux
+# scaling
+tr2<-tr1/sdx
+```
+
+- Use `preProcess()`
+
+```r
+sdat<-subset(sim.dat,select=c("age","income"))
+# set the "method" option
+trans<-preProcess(sdat,method=c("center","scale"))
+# use predict() function to get the final result
+transformed<-predict(trans,sdat)
+```
+
+# Resolve Skewness
+
+- `describe(sim.dat)`
+- Box-Cox transformation
+
+```r
+# select the two columns and save them as dat_bc
+dat_bc<-subset(sim.dat,select=c("store_trans","online_trans"))
+(trans<-preProcess(dat_bc,method=c("BoxCox")))
+```
+
+Use `predict()` to get the transformed result:
+
+```r
+transformed<-predict(trans,dat_bc)
+```
+
+# Resolve Outliers
+
+- Defining outliers is hard
+- Basic visualizations: box-plot, histogram and scatterplot
+- Statistical methods to define outliers
+
+# Z-score and modified Z-score
+
+- Z-score
+
+$$Z_{i}=\frac{Y_{i}-\bar{Y}}{s}$$
+where $\bar{Y}$ and $s$ are mean and standard deviation for $Y$
+
+- Modified Z-score
+
+$$M_{i}=\frac{0.6745(Y_{i}-\bar{Y})}{MAD}$$
+
+where MAD is the median of a series of $|Y_{i} - \bar{Y}|$, called the median of the absolute dispersion
+
+- Iglewicz and Hoaglin suggest that the points with the Z-score greater than 3.5 are possible outliers
+
+# Collinearity
+
+- Define: `corrplot()`
+- Algorithm to remove a minimum number of predictors to ensure all pairwise correlations are below a certain threshold
+
+> 
+(1) Calculate the correlation matrix of the predictors.
+(2) Determine the two predictors associated with the largest absolute pairwise correlation (call them predictors A and B).
+(3) Determine the average correlation between A and the other variables. Do the same for predictor B.
+(4) If A has a larger average correlation, remove it; otherwise, remove predictor B.
+(5) Repeat Step 2-4 until no absolute correlations are above the threshold.
+
+- How to choose the threshold?
+
+# Sparse Variables
+
+- Detecting rules:
+
+1. The fraction of unique values over the sample size 
+2. The ratio of the frequency of the most prevalent value to the frequency of the second most prevalent value. 
+
+
+# Re-encode Dummy Variables
+
+- `class.ind()` from `nnet` package
+
+```r
+dumVar<-class.ind(sim.dat$gender)
+head(dumVar)
+```
+
+- `dummyVars()` from `caret`
+
+```r
+dumMod<-dummyVars(~gender+house+income,
+                  data=sim.dat,
+                  # use "origional variable name + level" as new name
+                  levelsOnly=F)
+head(predict(dumMod,sim.dat))
+```
+
