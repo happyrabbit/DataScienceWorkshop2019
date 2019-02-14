@@ -243,5 +243,3 @@ cnn_pred <- cnn_model %>%
 - Classic Networks:
     - AlexNet: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
     - VGG: https://arxiv.org/abs/1409.1556
-
-- Hands-on: https://github.com/happyrabbit/Talks/tree/master/2018_06_ShortCourse 
