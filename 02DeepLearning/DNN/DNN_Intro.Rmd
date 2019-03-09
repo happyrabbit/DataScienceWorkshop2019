@@ -91,3 +91,39 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 - Goal: Find $w,b$ that mininizes $J(w,b)$
     - $w := w - \alpha \frac{\partial J}{\partial w}$
     - $b := b - \alpha \frac{\partial J}{\partial b}$
+
+# Neural Network:  0 layer neural network
+
+<center>
+![](images/dnn0.png){width=60%}
+</center>
+
+# Neural Network: 1 layer neural network
+
+<center>
+![](images/dnn1.png){width=60%}
+</center>
+
+# Neural Network: 1 layer neural network
+
+<center>
+![](images/dnn_math1.png){width=80%}
+</center>
+
+# Neural Network: 1 layer neural network
+
+<center>
+![](images/dnn_math2.png){width=80%}
+</center>
+
+# Neural Network: 1 layer neural network
+
+<center>
+![](images/dnn_math3.png){width=80%}
+</center>
+
+# Across m samples
+
+# Activation functions
+
+# Back Propogation
