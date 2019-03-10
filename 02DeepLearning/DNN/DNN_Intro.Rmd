@@ -124,6 +124,16 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 
 # Across m samples
 
+<center>
+![](images/dnn_math4.png){width=80%}
+</center>
+
+# Across m samples
+
+<center>
+![](images/dnn_math5.png){width=80%}
+</center>
+
 # Activation functions
 
 # Back Propogation
