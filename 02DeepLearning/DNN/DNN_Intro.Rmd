@@ -136,4 +136,17 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 
 # Activation functions
 
+- Intermediate layers
+    - Relu (i.e. rectified linear unit) is usually a good choice which has the following good properties:   
+(1) fast computation;   
+(2) non-linear;  
+(3) reduced likelihood of the gradient to vanish;   
+(4) Unconstrained response
+    - Sigmoid, studied in the past, not as good as Relu in deep learning, due to the gradient vanishing problem when there are many layers
+
+- Last layer which connects to the output
+    - Binary classification: sigmoid with binary cross entropy as loss function
+    - Multiple class, single-label classification: softmax with categorical cross entropy for loss function
+    - Continuous responses: identity function (i.e. y = x)
+
 # Back Propogation

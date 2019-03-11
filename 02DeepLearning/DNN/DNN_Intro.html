@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Hui Lin @Netlify  Ming Li @Amazon" />
-  <meta name="date" content="2019-03-10" />
+  <meta name="date" content="2019-03-11" />
   <meta name="copyright" content="https://course2019.netlify.com" />
   <title>Neural Networks and Deep Learning</title>
   <style type="text/css">code{white-space: pre;}</style>
@@ -19,7 +19,7 @@
   <p class="author">
 <a href="http://scientistcafe.com">Hui Lin</a> <span class="citation">@Netlify</span></br> </br> Ming Li <span class="citation">@Amazon</span>
   </p>
-  <p class="date">2019-03-10</p>
+  <p class="date">2019-03-11</p>
 </div>
 <div id="types-of-neural-network" class="slide section level1">
 <h1>Types of Neural Network</h1>
@@ -202,6 +202,33 @@ x_{n_{x}}^{(1)} &amp; x_{n_{x}}^{(2)} &amp; \dots &amp; x_{n_{x}}^{(m)}
 </div>
 <div id="activation-functions" class="slide section level1">
 <h1>Activation functions</h1>
+<ul>
+<li>Intermediate layers
+<ul>
+<li>Relu (i.e. rectified linear unit) is usually a good choice which has the following good properties:<br />
+</li>
+</ul></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>fast computation;<br />
+</li>
+<li>non-linear;<br />
+</li>
+<li>reduced likelihood of the gradient to vanish;<br />
+</li>
+<li>Unconstrained response
+<ul>
+<li>Sigmoid, studied in the past, not as good as Relu in deep learning, due to the gradient vanishing problem when there are many layers</li>
+</ul></li>
+</ol>
+<ul>
+<li>Last layer which connects to the output
+<ul>
+<li>Binary classification: sigmoid with binary cross entropy as loss function</li>
+<li>Multiple class, single-label classification: softmax with categorical cross entropy for loss function</li>
+<li>Continuous responses: identity function (i.e. y = x)</li>
+</ul></li>
+</ul>
 </div>
 <div id="back-propogation" class="slide section level1">
 <h1>Back Propogation</h1>
