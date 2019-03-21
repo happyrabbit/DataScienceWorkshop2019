@@ -136,6 +136,12 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 
 # Activation functions
 
+<center>
+![](images/activation.png){width=80%}
+</center>
+
+# Activation functions
+
 - Intermediate layers
     - Relu (i.e. rectified linear unit) is usually a good choice which has the following good properties:   
 (1) fast computation;   
@@ -143,6 +149,7 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 (3) reduced likelihood of the gradient to vanish;   
 (4) Unconstrained response
     - Sigmoid, studied in the past, not as good as Relu in deep learning, due to the gradient vanishing problem when there are many layers
+    - hyperbolic tangent function (tanh)
 
 - Last layer which connects to the output
     - Binary classification: sigmoid with binary cross entropy as loss function
@@ -150,3 +157,26 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Continuous responses: identity function (i.e. y = x)
 
 # Back Propogation
+
+# Optimization Methods
+
+- Mini-batch Stochastic Gradient Descent (SGD)
+    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters:  where  is the learning rate which is a hyper parameter that can be changed
+    - Gradients are efficiently calculated using backpropagation method
+    - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
+    - An updated version with ‘momentum’ for quick convergence
+
+# Deal With Overfitting
+
+- Huge number of parameters, even with large amount of training data, there is a potential of overfitting 
+    - Overfitting due to size of the NN (i.e. total number of parameters)
+    - Overfitting due to using the training data for too many epochs
+
+- Solution for overfitting due to NN size
+    - Dropout: randomly dropout some proportion (such as 0.3 or 0.5) of nodes at each layer, which is similar to random forest concept 
+    - Using L1 or L2 regularization in the activation function at each layer 
+
+- Solution for overfitting due to using too many epochs
+    - Run NN with large number of epochs to reach overfitting region through cross validation from training/validation vs. epoch curve
+    - Choose the model with number of epochs that have the minimum validation accuracy as the final NN model
+    - The optimal number for epoch is determined by when the model is not overfitted (i.e. validation accuracy reaches the best performance)
