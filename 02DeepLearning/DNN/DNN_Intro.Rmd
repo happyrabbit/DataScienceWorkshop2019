@@ -156,8 +156,6 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Multiple class, single-label classification: softmax with categorical cross entropy for loss function
     - Continuous responses: identity function (i.e. y = x)
 
-# Back Propogation
-
 # Optimization Methods
 
 - Mini-batch Stochastic Gradient Descent (SGD)
