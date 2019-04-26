@@ -1,10 +1,10 @@
 ---
 title: "Introduction"
-author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
 date: "`r Sys.Date()`"
 output:
   slidy_presentation:
-    footer: https://course2019.netlify.com
+    footer: https://course2019.netlify.com/
   ioslides_presentation: default
   beamer_presentation: default
 ---
@@ -13,31 +13,33 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
 # Schedule
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction | 8:00 - 8:45 |
-| Deep Learning 1 | 8:45 - 10:15 |
-| Break | 10:15 - 10:30 |
-| Deep Learning 2&3	| 10:30 - 12:00 |
-| Lunch break |	12:00 - 13:30 |
-| Deep Learning Hands on Session |	13:30 - 15:15 |
-| Break	| 15:15 - 15:30 |
-| Big Data Cloud Platform Lecture and hands on | 15:15 - 16:00 |
-| Analytical dashboard and report |	16:00 - 16:15 |
-| Soft Skill and Project Cycle |	16:15 - 16:45 |
-| Q&A |	16:45 - 17:00 |
+| Introduction to Data Science | 08:40 - 09:10 | 
+| Deep Learning 1 | 09:10 - 10:10 |
+| Tea Break | 10:10 - 10:30 |
+| Deep Learning 2 & 3 | 10:30 - 12:00 |
+| Lunch | 12:00 - 13:00 |
+| Big Data Cloud Platform and Hands-on | 13:00 - 13:45 |
+| Deep Learning 1 Hands-on | 13:45 - 14:30 |
+| Tea Break | 14:30 - 14:50 |
+| Deep Learning 2 & 3 Hands-on | 14:50 - 15:50 |
+| Soft Skill and Project Cycle | 15:50 - 16:15 |
+| Q&A	| 16:15 - 16:30 | 
 
-# Slides 
+
+13:00-16:30 Afternoon shortcourse
+14:30-14:50 Tea break
+
+# Course Website
 
 <center>
 <font size = "10">
-https://github.com/happyrabbit/DataScienceWorkshop2019
+https://idad2019.netlify.com/
 </font>
 </center>
-
 
 # The term no one really defined
 
@@ -50,13 +52,13 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
 
 #  What is “hard-core pornography”?
 
-- Obscenity case of Jacobellis v. Ohio (1964)
+> Jacobellis v. Ohio, 378 U.S. 184 (1964), was a United States Supreme Court decision handed down in 1964 involving whether the state of Ohio could, consistent with the First Amendment, ban the showing of the Louis Malle film The Lovers (Les Amants), which the state had deemed obscene.
 
 #  What is “hard-core pornography”?
 
 - Obscenity case of Jacobellis v. Ohio (1964)
 
-> “I know it when I see it. (Potter Stewart)”
+> “I know it when I see it.” (Justice Potter Stewart)
 
 # Three tracks of data science
 
@@ -234,6 +236,5 @@ https://github.com/happyrabbit/DataScienceWorkshop2019
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
 
-- [Big Data with R](https://www.dropbox.com/sh/8t4k8lgk0su3gjb/AAD4GwWUhUj7bdkmw0j7FPWNa/bigdataclass2018?dl=0)
 
 

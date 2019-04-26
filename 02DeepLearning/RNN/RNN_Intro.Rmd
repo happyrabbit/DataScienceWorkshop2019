@@ -1,6 +1,6 @@
 ---
 title: "Recurrent Neural Networks"
-author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
@@ -554,3 +554,9 @@ Andrew Ng:
 - Next massive wave of value creation: manufacturing/agriculture devices company/health care company
 - AI that can arrive at accurate conclusions with less data, something called “few shot learning” by some in the field
 - "generalizability" in computer vision: human radiologists are much better at generalizing
+
+# Some Papers
+
+- Cho et al., 2014. [On the Properties of Neural Machine Translation: Encoder–Decoder Approaches](https://www.aclweb.org/anthology/W14-4012)
+- Chung et al., 2014. [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)
+- Hochreiter & Schmidhuber 1997. [Long short-term memory](https://www.bioinf.jku.at/publications/older/2604.pdf)

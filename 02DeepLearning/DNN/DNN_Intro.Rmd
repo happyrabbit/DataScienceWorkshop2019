@@ -1,10 +1,10 @@
 ---
 title: "Neural Networks and Deep Learning"
-author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
-    footer: "https://course2019.netlify.com"
+    footer: "https://course2019.netlify.com/"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,41 +21,41 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Input (x) | Output (y) | Application |
 | :---: |  :---:  |  :---: |
-| **Home features** | **Price** | **Real Estate** |
-| **Ad, user info** | **Click on an Ad? (0/1)** | **Online Advertising** |
+| Home features | Price | Real Estate |
+| Ad, user info | Click on an Ad? (0/1) | Online Advertising |
 | Image | Object (1, ..., 10) | Photo tagging |
 | Image, Radar info | Position of other cars | Autonomous driving |
 | Audio | Text transcript | Speech recognition |
 | English | Chinese | Machine translation |
 | Voice  | Voice | Human computer conversation |
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 - Scale, scale, scale
 
 ![](images/dl_driver1.png){width=90%}
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 ![](images/dl_driver2.png){width=90%}
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 ![](images/dl_driver3.png){width=90%}
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 ![](images/dl_driver4.png){width=90%}
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 ![](images/dl_driver5.png){width=90%}
 
-# Why is deep learning taking off?
+# Why is Deep Learning Taking Off?
 
 ![](images/dl_driver6.png){width=90%}
 
-# Logistic Regression as a Neural Network
+# Logistic Regression as A Neural Network
 
 - m training samples: $\{(x^{(1)}, y^{(1)}),(x^{(2)}, y^{(2)}),...,(x^{(m)}, y^{(m)})\}$
 
@@ -71,7 +71,7 @@ $$y=[y^{(1)},y^{(2)},\dots,y^{(m)}] \in \mathbb{R}^{1 \times m}$$
 $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 
 
-# Logistic Regression as a Neural Network
+# Logistic Regression as A Neural Network
 
 - m training samples: $\{(x^{(1)}, y^{(1)}),(x^{(2)}, y^{(2)}),...,(x^{(m)}, y^{(m)})\}$
 
@@ -92,55 +92,55 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - $w := w - \alpha \frac{\partial J}{\partial w}$
     - $b := b - \alpha \frac{\partial J}{\partial b}$
 
-# Neural Network:  0 layer neural network
+# Neural Network:  0 Layer Neural Network
 
 <center>
 ![](images/dnn0.png){width=60%}
 </center>
 
-# Neural Network: 1 layer neural network
+# Neural Network: 1 Layer Neural Network
 
 <center>
 ![](images/dnn1.png){width=60%}
 </center>
 
-# Neural Network: 1 layer neural network
+# Neural Network: 1 Layer Neural Network
 
 <center>
 ![](images/dnn_math1.png){width=80%}
 </center>
 
-# Neural Network: 1 layer neural network
+# Neural Network: 1 Layer Neural Network
 
 <center>
 ![](images/dnn_math2.png){width=80%}
 </center>
 
-# Neural Network: 1 layer neural network
+# Neural Network: 1 Layer Neural Network
 
 <center>
 ![](images/dnn_math3.png){width=80%}
 </center>
 
-# Across m samples
+# Across m Samples
 
 <center>
 ![](images/dnn_math4.png){width=80%}
 </center>
 
-# Across m samples
+# Across m Samples
 
 <center>
 ![](images/dnn_math5.png){width=80%}
 </center>
 
-# Activation functions
+# Activation Functions
 
 <center>
 ![](images/activation.png){width=80%}
 </center>
 
-# Activation functions
+# Activation Functions
 
 - Intermediate layers
     - Relu (i.e. rectified linear unit) is usually a good choice which has the following good properties:   
@@ -159,12 +159,12 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 # Optimization Methods
 
 - Mini-batch Stochastic Gradient Descent (SGD)
-    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters:  where  is the learning rate which is a hyper parameter that can be changed
+    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters (with hyper parameters)
     - Gradients are efficiently calculated using backpropagation method
     - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
-    - An updated version with ‘momentum’ for quick convergence
+    - An updated version with "momentum" for quick convergence
 
-# Deal With Overfitting
+# Deal with Overfitting
 
 - Huge number of parameters, even with large amount of training data, there is a potential of overfitting 
     - Overfitting due to size of the NN (i.e. total number of parameters)
@@ -178,3 +178,75 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Run NN with large number of epochs to reach overfitting region through cross validation from training/validation vs. epoch curve
     - Choose the model with number of epochs that have the minimum validation accuracy as the final NN model
     - The optimal number for epoch is determined by when the model is not overfitted (i.e. validation accuracy reaches the best performance)
+    
+# Recap of A Few Key Concepts
+
+- **Data**: Require large well-labeled dataset
+- **Computation**: intensive matrix-matrix operation
+- **Structure** of fully connected feedforward NN
+    - Size of the NN: total number of parameters
+    - Depth: total number of layers (this is where deep learning comes from)
+    - Width of a particular layer: number of nodes (i.e. neurons) in that layer
+- **Activation function**
+    - Intermediate layers
+    - Last layer connecting to outputs
+- **Loss function**
+    - Classification (i.e. categorical response)
+    - Regression (i.e. continuous response)
+- **Optimization methods (SGD)**
+    - Batch size
+    - Learning rate 
+    - Epoch
+- **Deal with overfitting**
+    - Dropout 
+    - Regularization (L1 or L2)
+
+# MNIST Dataset
+
+- Contains 70000 handwritten labeled digit images with label (60000 training + 10000 testing)
+- Census Bureau employees and American high school students wrote these digits
+- Each image is 28x28 pixel in greyscale
+- Yann LeCun used convolutional network LeNet to achieve < 1% error rate at 1990s
+
+<center>
+![](images/MNIST.png){width=50%}
+</center>
+
+# Use Keras R Package
+
+1. Data preprocessing (from image to list of input features)
+    - One image of 28x28 grey scale value matrix $\rightarrow$ 784 column of features
+    - Scale the value to between 0 and 1, by divide each value by 255
+    - Make response categorical (i.e. 10 columns with the corresponding digit column 1 and rest columns zero.
+    
+2. Load keras package and build a neural network with a few layers
+    - Define a placeholder object for the NN structure
+    - 1st layer using 256 nodes, fully connected, using ‘relu’ activation function and connect from the input 784 features
+    - 2nd layer using 128 nodes, fully connected, using ‘relu’ activation function
+    - 3rd layer using 64 nodes, fully connected, using ‘relu’ activation function
+    - 4th layer using 10 nodes, fully connected, using ‘softmax’ activation function and connect to the output 10 columns
+    - Add drop out to the first three layers to prevent overfitting
+
+3. Compile the NN model, define loss function, optimizer, and metrics to follow
+
+4. Fit the NN model using the training dataset, define epoch, mini batch size, and validation size used in the training where the metrics will be checked
+
+5. Predict using the fitted NN model using the testing dataset
+
+# R Scripts
+
+<center>
+![](images/rscript.png){width=80%}
+</center>
+
+# Deep Learning Models Across Platforms
+
+- Open NN Exchange Format (ONNX) (https://github.com/onnx/onnx )
+
+<center>
+![](images/platform.png){width=80%}
+</center>
+
+
+
+
