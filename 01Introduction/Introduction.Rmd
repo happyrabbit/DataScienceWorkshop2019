@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output:
   slidy_presentation:
@@ -29,15 +29,11 @@ knitr::opts_chunk$set(echo = FALSE)
 | Soft Skill and Project Cycle | 15:50 - 16:15 |
 | Q&A	| 16:15 - 16:30 | 
 
-
-13:00-16:30 Afternoon shortcourse
-14:30-14:50 Tea break
-
 # Course Website
 
 <center>
 <font size = "10">
-https://idad2019.netlify.com/
+https://course2019.netlify.com/
 </font>
 </center>
 
@@ -47,18 +43,8 @@ https://idad2019.netlify.com/
 
 > Data science is the discipline of making data useful.  Ok...so what is it? 
 
-
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
-#  What is “hard-core pornography”?
-
-> Jacobellis v. Ohio, 378 U.S. 184 (1964), was a United States Supreme Court decision handed down in 1964 involving whether the state of Ohio could, consistent with the First Amendment, ban the showing of the Louis Malle film The Lovers (Les Amants), which the state had deemed obscene.
-
-#  What is “hard-core pornography”?
-
-- Obscenity case of Jacobellis v. Ohio (1964)
-
-> “I know it when I see it.” (Justice Potter Stewart)
 
 # Three tracks of data science
 

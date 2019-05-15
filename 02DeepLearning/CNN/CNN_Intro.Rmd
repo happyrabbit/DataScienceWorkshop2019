@@ -229,17 +229,12 @@ cnn_pred <- cnn_model %>%
 ![](images/cnn_size.png){width=90%}
 
 
-# Other Notes
+# Effective CNNs
 
+- LeNet -5:  LeCun et al., 1998. [Gradient-based learning applied to document recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
 
-- Two options: Cloud and GPU (NVIDIA)
+- AlexNet: Krizhevsky et al., 2012. [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
-- Hyperparameter: pre-trained model
+- VGG-16: Simonyan & Zisserman 2015. [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556.pdf)
 
-- AI application: Bayesian accuracy
-
-- MNIST Comparison: http://yann.lecun.com/exdb/mnist/
-
-- Classic Networks:
-    - AlexNet: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
-    - VGG: https://arxiv.org/abs/1409.1556
+- ResNets: He et al., 2015. [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)

@@ -1,6 +1,6 @@
 ---
 title: "Neural Networks and Deep Learning"
-author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
@@ -92,6 +92,10 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - $w := w - \alpha \frac{\partial J}{\partial w}$
     - $b := b - \alpha \frac{\partial J}{\partial b}$
 
+# Gradient Descent
+
+![](../../../IntroDataScience/images/GradientDescent.png){width=90%}
+
 # Neural Network:  0 Layer Neural Network
 
 <center>
@@ -102,6 +106,12 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
 
 <center>
 ![](images/dnn1.png){width=60%}
+</center>
+
+# Deep Neural Network
+
+<center>
+![](../../../IntroDataScience/images/dnn_str.png){width=80%}
 </center>
 
 # Neural Network: 1 Layer Neural Network

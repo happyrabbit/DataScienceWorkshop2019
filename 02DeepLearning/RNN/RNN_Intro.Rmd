@@ -1,6 +1,6 @@
 ---
 title: "Recurrent Neural Networks"
-author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)'
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
@@ -502,7 +502,7 @@ $e_{man} - e_{woman} \approx e_{king} - e_{?}$
 $\rightarrow  \underset{w}{argmax} \{sim (e_{w}, e_{king} - e_{man} + e_{woman})\}$
 
 
-```{r, message=F, fig.width=6, fig.height=4}
+```{r, message=F, fig.width=6, fig.height=4, warning=F}
 require(grid)
 require(ggplot2)
 d=data.frame(gender=c(-1, 1, -0.95, 0.97), loyal=c(0.01, -0.02, 0.93, 0.95))
@@ -529,7 +529,7 @@ Cosine similarity: $sim(a,b) = \frac{a^{T}b}{ ||a||_{2} ||b||_{2}}$
 
 ![](images/cosim.PNG){width=30%}
 
-```{r, message=F, fig.width=6, fig.height=4}
+```{r, message=F, fig.width=6, fig.height=4, warning=FALSE}
 theta=seq(0,pi,length = 100)
 cos_theta=cos(theta)
 plot(theta/pi*180, cos_theta, type = "l", xlab = "degree", ylab = "cos")
