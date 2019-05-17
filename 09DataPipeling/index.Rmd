@@ -1,0 +1,48 @@
+---
+title: "Big Data and Pipeline"
+author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+date: '`r Sys.Date()`'
+output:
+  slidy_presentation: default
+  ioslides_presentation:
+    logo: https://scientistcafe.com/images/netlifylogo.png
+    widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Some Statistics
+
+- 1 Gitabyte(GB) = 1024 Megabytes(MB) 
+- 1 Petabyte(PB) = 1024 Terabytes(TB) 
+- 1 Exabyte(EB) = 1024 Petabyte(PB) 
+- PC holds 500 GB
+- Netlify
+    - 35 GB logs/day (1TB/month, 12TB/year, get to PB in 4 years)
+    - 10 millions sites on our platform
+- Google ([live statistics](http://www.internetlivestats.com/google-search-statistics/))
+    - over 40,000 search queries/second; over 3.5 billion searches/day; 1.2 trillion searches/year(2012) 
+    - 10-15 EB (data of 30 Million PCs combined!)
+    - "Google currently processes over 20 petabytes of data per day through an average of 100,000 MapReduce jobs spread across its massive computing clusters."[(from a 2017 article)](https://www.heshmore.com/how-much-data-does-google-handle/)
+ 
+# Move to the Cloud
+
+- Amazon AWS cloud environment
+- Microsoft Azure cloud environment
+- Google cloud platform
+
+<center>
+<img src="../../IDAD2019/03BigDataCloudPlatform/images/BirthdayDog.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
+</center>
+
+# Data Pipeline
+
+<center>
+![](images/nf_pipeline.png){width=80%}
+</center>
+
+# Data Science Types v.s Needs
+
+<img src="../01Introduction/images/ds_types.PNG" alt="HTML5 Icon" style="width:1000px;height:500px;">

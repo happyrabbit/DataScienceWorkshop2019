@@ -13,22 +13,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Schedule
-
-| Topic | Time |
-| :---: | :---: |
-| Introduction to Data Science | 08:40 - 09:10 | 
-| Deep Learning 1 | 09:10 - 10:10 |
-| Tea Break | 10:10 - 10:30 |
-| Deep Learning 2 & 3 | 10:30 - 12:00 |
-| Lunch | 12:00 - 13:00 |
-| Big Data Cloud Platform and Hands-on | 13:00 - 13:45 |
-| Deep Learning 1 Hands-on | 13:45 - 14:30 |
-| Tea Break | 14:30 - 14:50 |
-| Deep Learning 2 & 3 Hands-on | 14:50 - 15:50 |
-| Soft Skill and Project Cycle | 15:50 - 16:15 |
-| Q&A	| 16:15 - 16:30 | 
-
 # Course Website
 
 <center>
@@ -44,7 +28,6 @@ https://course2019.netlify.com/
 > Data science is the discipline of making data useful.  Ok...so what is it? 
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
-
 
 # Three tracks of data science
 
@@ -71,7 +54,9 @@ https://course2019.netlify.com/
 
 # Data Pipeline
 
-![](images/nf_pipeline.png){width=80%}
+<center>
+![](../09DataPipeling/images/nf_pipeline.png){width=80%}
+</center>
 
 # Analysis
 
