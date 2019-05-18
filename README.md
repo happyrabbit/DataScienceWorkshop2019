@@ -33,8 +33,8 @@ The primary audiences for this course are:
 | Big Data Cloud Platform and Hands-on | 13:30 - 14:00 |
 | Deep Learning 1 Hands-on | 14:00 - 14:45 |
 | Break | 14:45 - 15:00 |
-| Deep Learning 2 & 3 Hands-on | 15:00 - 15:50 |
-| Analytical Dashboard | 15:50 - 16:10 |
+| Deep Learning 2 & 3 Hands-on | 15:00 - 15:40 |
+| Build Personal Website | 15:40 - 16:10 |
 | Soft Skill and Project Cycle (optional) | 16:10 - 16:30 |
 
 # Some links
