@@ -155,14 +155,6 @@ If layer $l$ is a convolution layer:
 
 - Fully Connected
 
-# Notes on Dropout
-
-![](images/dropout.png){width=90%}
-
-# Is it overfitting?
-
-![](images/overfitting.png){width=70%}
-
 # Using Keras To Build CNN
 
 Typical `keras` workflow:

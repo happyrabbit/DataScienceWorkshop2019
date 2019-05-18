@@ -188,7 +188,15 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Run NN with large number of epochs to reach overfitting region through cross validation from training/validation vs. epoch curve
     - Choose the model with number of epochs that have the minimum validation accuracy as the final NN model
     - The optimal number for epoch is determined by when the model is not overfitted (i.e. validation accuracy reaches the best performance)
-    
+
+# Dropout
+
+![](../CNN/images/dropout.png){width=90%}
+
+# Is it overfitting?
+
+![](../CNN/images/overfitting.png){width=70%}
+
 # Recap of A Few Key Concepts
 
 - **Data**: Require large well-labeled dataset
