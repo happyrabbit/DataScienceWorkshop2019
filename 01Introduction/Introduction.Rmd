@@ -189,6 +189,9 @@ https://course2019.netlify.com/
     - hurt data scientist's career growth; 
     - sacrifice the flexibility of the embedded model
 
+# Join Us!
+
+Interested in our data science team? Contact me hui@netlify.com
 
 # Some links
 
