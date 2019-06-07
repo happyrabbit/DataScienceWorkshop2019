@@ -141,13 +141,24 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Multiple class, single-label classification: softmax with categorical cross entropy for loss function
     - Continuous responses: identity function (i.e. y = x)
 
-# Optimization Methods
+# Deal with Overfitting: Regularization
 
-- Mini-batch Stochastic Gradient Descent (SGD)
-    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters (with hyper parameters)
-    - Gradients are efficiently calculated using backpropagation method
-    - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
-    - An updated version with "momentum" for quick convergence
+For logistic regression,
+
+$$\underset{w,b}{min}J(w,b)= \frac{1}{m} \Sigma_{i=1}^{m}L(\hat{y}^{(i)}, y^{(i)}) + penalty$$
+
+where 
+
+$$L_2\ penalty=\frac{\lambda}{2m}\parallel w \parallel_2^2 = \frac{\lambda}{2m}\Sigma_{i=1}^{n_x}w_i^2$$
+$$L_1\ penalty = \frac{\lambda}{m}\Sigma_{i=1}^{n_x}|w|$$
+For neural network,
+
+$$J(w^{[1]},b^{[1]},\dots,w^{[L]},b^{[L]})=\frac{1}{m}\Sigma_{i=1}^{m}L(\hat{y}^{(i)},y^{(i)}) + \frac{\lambda}{2m}\Sigma_{l=1}^{L} \parallel w^{[l]} \parallel^2_F$$
+where $\parallel w^{[l]} \parallel^2_F = \Sigma_{i=1}^{l}\Sigma_{j=1}^{l-1} (w^{[l]}_{ij})^2$
+
+# Deal with Overfitting: Dropout
+
+![](../CNN/images/dropout.png){width=90%}
 
 # Deal with Overfitting
 
@@ -164,14 +175,18 @@ $\hat{y}^{(i)} = \sigma(w^Tx^{(i)} + b)$ where $\sigma(z) = \frac{1}{1+e^{-z}}$
     - Choose the model with number of epochs that have the minimum validation accuracy as the final NN model
     - The optimal number for epoch is determined by when the model is not overfitted (i.e. validation accuracy reaches the best performance)
 
-# Dropout
-
-![](../CNN/images/dropout.png){width=90%}
-
 # Is it overfitting?
 
 ![](../CNN/images/overfitting.png){width=70%}
 
+# Optimization Methods
+
+- Mini-batch Stochastic Gradient Descent (SGD)
+    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters (with hyper parameters)
+    - Gradients are efficiently calculated using backpropagation method
+    - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
+    - An updated version with "momentum" for quick convergence
+    
 # Recap of A Few Key Concepts
 
 - **Data**: Require large well-labeled dataset
