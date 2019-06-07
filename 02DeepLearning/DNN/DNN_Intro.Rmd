@@ -29,31 +29,6 @@ knitr::opts_chunk$set(echo = FALSE)
 | English | Chinese | Machine translation |
 | Voice  | Voice | Human computer conversation |
 
-# Why is Deep Learning Taking Off?
-
-- Scale, scale, scale
-
-![](images/dl_driver1.png){width=90%}
-
-# Why is Deep Learning Taking Off?
-
-![](images/dl_driver2.png){width=90%}
-
-# Why is Deep Learning Taking Off?
-
-![](images/dl_driver3.png){width=90%}
-
-# Why is Deep Learning Taking Off?
-
-![](images/dl_driver4.png){width=90%}
-
-# Why is Deep Learning Taking Off?
-
-![](images/dl_driver5.png){width=90%}
-
-# Why is Deep Learning Taking Off?
-
-![](images/dl_driver6.png){width=90%}
 
 # Logistic Regression as A Neural Network
 
