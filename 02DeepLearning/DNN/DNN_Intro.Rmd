@@ -182,10 +182,10 @@ where $\parallel w^{[l]} \parallel^2_F = \Sigma_{i=1}^{l}\Sigma_{j=1}^{l-1} (w^{
 # Optimization Methods
 
 - Mini-batch Stochastic Gradient Descent (SGD)
-    - Use a small segment of data (i.e. 128 or 256) to update the SGD parameters (with hyper parameters)
+    - Use a small segment of data (i.e. $2^6=64$, $2^7=128$, $2^7=256$, $2^8=512$) to update the SGD parameters (with hyper parameters)
     - Gradients are efficiently calculated using backpropagation method
     - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
-    - An updated version with "momentum" for quick convergence
+    
     
 # Recap of A Few Key Concepts
 
