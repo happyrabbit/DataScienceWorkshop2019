@@ -179,14 +179,23 @@ where $\parallel w^{[l]} \parallel^2_F = \Sigma_{i=1}^{l}\Sigma_{j=1}^{l-1} (w^{
 
 ![](../CNN/images/overfitting.png){width=70%}
 
-# Optimization Methods
+#  Batch, Mini-batch, Stochastic Gradient Descent
 
-- Mini-batch Stochastic Gradient Descent (SGD)
-    - Use a small segment of data (i.e. $2^6=64$, $2^7=128$, $2^7=256$, $2^8=512$) to update the SGD parameters (with hyper parameters)
-    - Gradients are efficiently calculated using backpropagation method
-    - When the entire dataset are used to updated the SGD, it is called one epoch and multiple epochs are needed to run to reach convergence
-    
-    
+$\begin{array}{ccc}
+x= & [\underbrace{x^{(1)},x^{(2)},\cdots,x^{(1000)}}/ & \cdots/\cdots x^{(m)}]\\
+(n_{x},m) & mini-batch\ 1
+\end{array}$
+
+$\begin{array}{ccc}
+y= & [\underbrace{y^{(1)},y^{(2)},\cdots,y^{(1000)}}/ & \cdots/\cdots y^{(m)}]\\
+(1,m) & mini-batch\ 1
+\end{array}$
+
+- Mini-batch size = m: batch gradient descent, too long per iteration
+- Mini-batch size = 1: stochastic gradient descent, lose speed from vectorization
+- Mini-batch size in between: mini-batch gradient descent, make progress without processing all training set, typical batch sizes are $2^6=64$, $2^7=128$, $2^7=256$, $2^8=512$
+
+
 # Recap of A Few Key Concepts
 
 - **Data**: Require large well-labeled dataset
