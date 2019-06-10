@@ -219,6 +219,12 @@ For example,
 
 $$\begin{array}{cc} \beta=0.95\\ V_{0}=0\\ V_{1}=0.05\theta_{1} & V_{1}^{corrected}=\frac{V_{1}}{1-0.95}=\theta_{1}\\ V_{2}=0.95V_{1}+0.05\theta_{1}=0.0475\theta_{1}+0.05\theta_{2} & V_{2}^{corrected}=\frac{V_{2}}{1-0.95^{2}}=0.4872\theta_{1}+0.5128\theta_{2} \end{array}$$
 
+# With v.s. Without Correction
+
+<center>
+![](images/wgt_ave_plot.png){width=80%}
+</center>
+
 # Momentum
 
 On iteration t, compute $dw$, $db$ using samples in one mini-batch and update the parameters as follows:
