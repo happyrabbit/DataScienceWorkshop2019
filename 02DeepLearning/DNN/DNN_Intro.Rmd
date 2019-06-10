@@ -181,20 +181,80 @@ where $\parallel w^{[l]} \parallel^2_F = \Sigma_{i=1}^{l}\Sigma_{j=1}^{l-1} (w^{
 
 #  Batch, Mini-batch, Stochastic Gradient Descent
 
-$\begin{array}{ccc}
-x= & [\underbrace{x^{(1)},x^{(2)},\cdots,x^{(1000)}}/ & \cdots/\cdots x^{(m)}]\\
-(n_{x},m) & mini-batch\ 1
-\end{array}$
-
-$\begin{array}{ccc}
-y= & [\underbrace{y^{(1)},y^{(2)},\cdots,y^{(1000)}}/ & \cdots/\cdots y^{(m)}]\\
-(1,m) & mini-batch\ 1
-\end{array}$
-
 - Mini-batch size = m: batch gradient descent, too long per iteration
 - Mini-batch size = 1: stochastic gradient descent, lose speed from vectorization
 - Mini-batch size in between: mini-batch gradient descent, make progress without processing all training set, typical batch sizes are $2^6=64$, $2^7=128$, $2^7=256$, $2^8=512$
 
+
+$$\begin{array}{ccc}
+x= & [\underbrace{x^{(1)},x^{(2)},\cdots,x^{(1000)}}/ & \cdots/\cdots x^{(m)}]\\
+(n_{x},m) & mini-batch\ 1
+\end{array}$$
+
+$$\begin{array}{ccc}
+y= & [\underbrace{y^{(1)},y^{(2)},\cdots,y^{(1000)}}/ & \cdots/\cdots y^{(m)}]\\
+(1,m) & mini-batch\ 1
+\end{array}$$
+
+
+# Exponentially Weighted Averages
+
+Suppose we have the following 100 days' temperature data:
+
+$$ \theta_{1}=49F, \theta_{2}=53F, \dots, \theta_{99}=70F, \theta_{100}=69F$$
+
+The weighted average is defined as:
+
+$$V_t = \beta V_{t-1}+(1-\beta)\theta_t$$
+
+And we have:
+
+$$\begin{array}{c} V_{0}=0\\ V_{1}=\beta V_1 + (1-\beta)\theta_1\\ V_2=\beta V_1 + (1-\beta)\theta_2\\ \vdots \\ V_{100}= \beta V_{99} + (1-\beta)\theta_{100} \end{array}$$
+
+# Corrected Exponentially Weighted Averages
+
+$$V_t^{corrected} = \frac{V_t}{1-\beta^t}$$
+
+For example, 
+
+$$\begin{array}{cc} \beta=0.95\\ V_{0}=0\\ V_{1}=0.05\theta_{1} & V_{1}^{corrected}=\frac{V_{1}}{1-0.95}=\theta_{1}\\ V_{2}=0.95V_{1}+0.05\theta_{1}=0.0475\theta_{1}+0.05\theta_{2} & V_{2}^{corrected}=\frac{V_{2}}{1-0.95^{2}}=0.4872\theta_{1}+0.5128\theta_{2} \end{array}$$
+
+# Momentum
+
+On iteration t, compute $dw$, $db$ using samples in one mini-batch and update the parameters as follows:
+
+$$V_{dw} = \beta V_{dw}+(1-\beta)dw$$
+
+$$V_{db} = \beta V_{db}+(1-\beta)db$$
+
+$$w=w-\alpha V_{dw};\ \ b=b-\alpha V_{db}$$
+
+<center>
+![](images/weighted_agv.png){width=40%}
+</center>
+
+
+# RMSprop
+
+On iteration t, compute dw, db using the current mini-batch.
+
+$$S_{dw}=\beta S_{dw} + (1-\beta)dw^2$$
+
+$$S_{db}=\beta S_{db} + (1-\beta)db^2$$
+
+$$w = w - \alpha \frac{dw}{\sqrt{S_{dw}}};\ b=b-\alpha \frac{db}{\sqrt{S_{db}}}$$
+
+# Adaptive Moment Estimation (Adam)
+
+On iteration t, compute $dw$, $db$ using the current mini-batch.
+
+$$\begin{cases} \begin{array}{c} V_{dw}=\beta_{1}V_{dw}+(1-\beta_{1})dw\\ V_{db}=\beta_{1}V_{db}+(1-\beta_{1})db \end{array} & momantum\ update\ \beta_{1}\end{cases}$$
+
+$$\begin{cases} \begin{array}{c} S_{dw}=\beta_{2}S_{dw}+(1-\beta_{2})dw^{2}\\ S_{db}=\beta_{2}S_{db}+(1-\beta_{2})db^{2} \end{array} & RMSprop\ update\ \beta_{2}\end{cases}$$
+
+$$\begin{cases} \begin{array}{c} V_{dw}^{corrected}=\frac{V_{dw}}{1-\beta_{1}^{t}}\\ V_{db}^{corrected}=\frac{V_{db}}{1-\beta_{1}^{t}} \end{array}\end{cases};\ \ \begin{cases} \begin{array}{c} S_{dw}^{corrected}=\frac{S_{dw}}{1-\beta_{2}^{t}}\\ S_{db}^{corrected}=\frac{S_{db}}{1-\beta_{2}^{t}} \end{array}\end{cases}$$
+
+$$w=w-\alpha \frac{V_{dw}^{corrected}}{\sqrt{S_{dw}^{corrected}} +\epsilon};\ b=b-\alpha\frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}}+\epsilon}$$
 
 # Recap of A Few Key Concepts
 

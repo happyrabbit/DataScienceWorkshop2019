@@ -29,11 +29,11 @@ The primary audiences for this course are:
 | Break | 10:00 - 10:15 |
 | Deep Learning 2 & 3 | 10:15 - 12:00 |
 | Deep Learning 1 Hands-on| 12:00 - 12:30 |
-| Lunch | 12:30 - 13:30 |
-| Deep Learning 2 & 3 Hands-on | 13:30 - 14:30 |
-| Big Data Pipeline | 14:30 - 14:45 |
-| Break | 14:45 - 15:00 |
-| Big Data Cloud Platform and Hands-on | 15:00 - 16:15 |
+| Lunch | 12:30 - 14:00 |
+| Deep Learning 2 & 3 Hands-on | 14:00 - 15:00 |
+| Big Data Pipeline | 15:00 - 15:15 |
+| Break | 15:15 - 15:30 |
+| Big Data Cloud Platform and Hands-on | 15:30 - 16:15 |
 | Soft Skill and Project Cycle (optional) | 16:15 - 16:30 |
 
 # Some links
@@ -43,11 +43,9 @@ The primary audiences for this course are:
 - [Perceptron notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/2761297084239405/1806228006848429/latest.html)
 - [Adaline notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/2761297084239426/1806228006848429/latest.html)
 - [Feedforward neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058030/1806228006848429/latest.html)
-- [Convolutional neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058129/1806228006848429/latest.html) 
+- [Convolutional neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058129/1806228006848429/latest.html)
 - [Recurrent neural network notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058228/1806228006848429/latest.html)
-
 - [Recurrent neural network](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/4462572393058228/1806228006848429/latest.html)
-
 - [Optimization Methods Summary](http://ruder.io/optimizing-gradient-descent/)
 - [Big Data Platform notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3725396058299890/1806228006848429/latest.html)
 - [Data preprocessing notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474646/1806228006848429/latest.html)
