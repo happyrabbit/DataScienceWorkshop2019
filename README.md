@@ -24,17 +24,17 @@ The primary audiences for this course are:
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction to Data Science | 08:30 - 09:00 | 
-| Deep Learning 1 | 09:00 - 10:00 |
+| Introduction to Data Science | 08:30 - 09:10 | 
+| Deep Learning 1 | 09:10 - 10:00 |
 | Break | 10:00 - 10:15 |
 | Deep Learning 2 & 3 | 10:15 - 12:00 |
 | Deep Learning 1 Hands-on| 12:00 - 12:30 |
 | Lunch | 12:30 - 14:00 |
 | Deep Learning 2 & 3 Hands-on | 14:00 - 15:00 |
-| Big Data Pipeline | 15:00 - 15:15 |
-| Break | 15:15 - 15:30 |
-| Big Data Cloud Platform and Hands-on | 15:30 - 16:15 |
-| Soft Skill and Project Cycle (optional) | 16:15 - 16:30 |
+| Big Data Pipeline | 15:00 - 15:30 |
+| Break | 15:30 - 15:45 |
+| Big Data Cloud Platform and Hands-on | 15:45 - 16:30 |
+| Soft Skill and Project Cycle | 16:30 - 17:00 |
 
 # Some links
 
