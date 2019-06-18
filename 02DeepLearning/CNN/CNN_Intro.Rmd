@@ -54,7 +54,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Image Data
 
-![](images/image_data.png){width=80%}
+<center>
+![](images/encode_image1.png){width=80%}
+</center>
+
+# Image Data
+
+<center>
+![](images/encode_image2.png){width=80%}
+</center>
 
 # Convolutions Schematic
 
@@ -230,3 +238,13 @@ cnn_pred <- cnn_model %>%
 - VGG-16: Simonyan & Zisserman 2015. [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556.pdf)
 
 - ResNets: He et al., 2015. [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
+
+# Different architecture search algorithms:
+
+- [NASnet](https://arxiv.org/pdf/1611.01578.pdf): 1800 GPU days (5 yrs on 1 GPU)
+
+- [AmoebaNet](https://arxiv.org/pdf/1802.01548.pdf): 3150 GPU days
+
+- [DARTS](https://arxiv.org/pdf/1806.09055.pdf): 4 GPU days
+
+- [ENAS](https://arxiv.org/pdf/1802.03268.pdf):  1000 x cheaper than standard NAS
