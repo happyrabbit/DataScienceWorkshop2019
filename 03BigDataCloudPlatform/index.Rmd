@@ -4,7 +4,7 @@ author: '[Hui Lin](http://scientistcafe.com) @[Netlify](https://www.netlify.com)
 date: "`r Sys.Date()`"
 output:
   slidy_presentation:
-    footer: https://course2019.netlify.com
+    footer: https://course2019.scientistcafe.com/
   beamer_presentation: default
 ---
 

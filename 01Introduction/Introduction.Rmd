@@ -4,7 +4,7 @@ author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon
 date: "`r Sys.Date()`"
 output:
   slidy_presentation:
-    footer: https://course2019.netlify.com/
+    footer: https://course2019.scientistcafe.com/
   ioslides_presentation: default
   beamer_presentation: default
 ---
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <center>
 <font size = "10">
-https://course2019.netlify.com/
+https://course2019.scientistcafe.com/
 </font>
 </center>
 
