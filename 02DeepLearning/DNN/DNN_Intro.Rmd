@@ -17,19 +17,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](../CNN/images/NN_EXP.png){width=80%}
 </center>
 
-# Neural Network Application
-
-| Input (x) | Output (y) | Application |
-| :---: |  :---:  |  :---: |
-| Home features | Price | Real Estate |
-| Ad, user info | Click on an Ad? (0/1) | Online Advertising |
-| Image | Object (1, ..., 10) | Photo tagging |
-| Image, Radar info | Position of other cars | Autonomous driving |
-| Audio | Text transcript | Speech recognition |
-| English | Chinese | Machine translation |
-| Voice  | Voice | Human computer conversation |
-
-
 # Logistic Regression as A Neural Network
 
 - m training samples: $\{(x^{(1)}, y^{(1)}),(x^{(2)}, y^{(2)}),...,(x^{(m)}, y^{(m)})\}$

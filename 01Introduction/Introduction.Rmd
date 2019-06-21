@@ -13,6 +13,19 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Learning outcomes:
+
+After taking the CE course, participants will:
+
+1. Get familiar with deep learning methods such as feedforward neural network, CNN, and RNN with hands-on how to apply these deep learning methods through R keras package with TensorFlow backend
+
+2. Understand data science in general and the end-to-end data science project cycles.
+
+3. Get familiar with cloud-based big data platforms (i.e., Databrick’s Spark) for data preprocessing and model development that are widely used in the development and production setting for industry and know how to transit from academia environment to enterprise environment quickly.
+
+4. Learn soft skills to ensure the successful delivery of data science projects and get familiar with typical data science project pitfalls.
+
+ 
 # Course Website
 
 <center>
@@ -48,14 +61,10 @@ https://course2019.scientistcafe.com/
 
 (3) Production: integrate model and analysis into the production system
 
-# Engineering - Production 
-
-![](images/integration.png){width=70%}
-
 # Data Pipeline
 
 <center>
-![](../09DataPipeling/images/nf_pipeline.png){width=80%}
+![](../09DataPipeline/images/nf_pipeline.png){width=70%}
 </center>
 
 # Analysis
@@ -220,7 +229,7 @@ https://course2019.scientistcafe.com/
 
 # Some links
 
-- The deep learning slides refer to Andrew Ng's course: [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning): Super awesome!
+- Part of the deep learning slides are based on Andrew Ng's course: [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning): Super awesome!
 
 - [Industry recommendations for academic data science programs](https://github.com/brohrer/academic_advisory)
 

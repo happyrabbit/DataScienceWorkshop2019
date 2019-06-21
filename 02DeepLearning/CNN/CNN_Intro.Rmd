@@ -17,24 +17,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/NN_EXP.png){width=80%}
 </center>
 
-# Neural Network Application
-
-| Input (x) | Output (y) | Application |
-| :---: |  :---:  |  :---: |
-| Home features | Price | Real Estate |
-| Ad, user info | Click on an Ad? (0/1) | Online Advertising |
-| **Image** | **Object (1, ..., 10)** | **Photo tagging** |
-| **Image, Radar info** | **Position of other cars** | **Autonomous driving** |
-| Audio | Text transcript | Speech recognition |
-| English | Chinese | Machine translation |
-| Voice | Voice | Human computer conversation |
-
 # Computer Vision
 
 - Image Classification
 
-![](images/SIGNS.png){width=60%}
-
+![](images/ImageClassification.png){width=60%}
 
 # Computer Vision
 
