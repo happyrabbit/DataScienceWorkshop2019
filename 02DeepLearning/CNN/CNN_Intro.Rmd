@@ -4,7 +4,7 @@ author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
-    footer: "https://course2019.netlify.com"
+    footer: "https://course2019.scientistcafe.com/"
 ---
 
 ```{r setup, include=FALSE}
@@ -239,7 +239,7 @@ cnn_pred <- cnn_model %>%
 
 - ResNets: He et al., 2015. [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 
-# Different architecture search algorithms:
+# Different Architecture Search Algorithms:
 
 - [NASnet](https://arxiv.org/pdf/1611.01578.pdf): 1800 GPU days (5 yrs on 1 GPU)
 
@@ -248,3 +248,9 @@ cnn_pred <- cnn_model %>%
 - [DARTS](https://arxiv.org/pdf/1806.09055.pdf): 4 GPU days
 
 - [ENAS](https://arxiv.org/pdf/1802.03268.pdf):  1000 x cheaper than standard NAS
+
+# Understanding Neural Networks
+
+- [Understanding Neural Networks Through Deep Visualization](http://yosinski.com/deepvis), [Video](http://yosinski.com/deepvis#toolbox)
+
+- [Deep Neural Networks are Easily Fooled](http://anhnguyen.me/project/fooling/)

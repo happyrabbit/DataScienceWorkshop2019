@@ -24,8 +24,8 @@ The primary audiences for this course are:
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction to Data Science | 08:30 - 09:10 | 
-| Deep Learning 1 | 09:10 - 10:00 |
+| Introduction to Data Science | 08:30 - 09:15 | 
+| Deep Learning 1 | 09:15- 10:00 |
 | Break | 10:00 - 10:15 |
 | Deep Learning 2 & 3 | 10:15 - 12:00 |
 | Deep Learning 1 Hands-on| 12:00 - 12:30 |
