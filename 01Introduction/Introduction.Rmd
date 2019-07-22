@@ -25,12 +25,11 @@ After taking the CE course, participants will:
 
 4. Learn soft skills to ensure the successful delivery of data science projects and get familiar with typical data science project pitfalls.
 
- 
 # Course Website
 
 <center>
 <font size = "10">
-https://course2019.scientistcafe.com/
+ https://course2019.scientistcafe.com/
 </font>
 </center>
 
@@ -173,7 +172,7 @@ https://course2019.scientistcafe.com/
 - The goal of AutoML
 - AutoML in practice
 
-1. Data preprpceesing & feature engineering
+1. Data prepropcessing & feature engineering
 2. Software usability
 3. Speed & performance of underlying machine learning
 4. Hardware
