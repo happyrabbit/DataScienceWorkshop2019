@@ -1,6 +1,6 @@
 ---
 title: "Convolutional Neural Network"
-author: '[Hui Lin](http://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
+author: '[Hui Lin](https://scientistcafe.com) @Netlify</br> </br> Ming Li @Amazon'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
