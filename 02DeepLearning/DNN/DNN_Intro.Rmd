@@ -309,14 +309,6 @@ $$w=w-\alpha \frac{V_{dw}^{corrected}}{\sqrt{S_{dw}^{corrected}} +\epsilon};\ b=
 ![](images/rscript.png){width=80%}
 </center>
 
-# Deep Learning Models Across Platforms
-
-- Open NN Exchange Format (ONNX) (https://github.com/onnx/onnx )
-
-<center>
-![](images/platform.png){width=80%}
-</center>
-
 
 
 
