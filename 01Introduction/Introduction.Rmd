@@ -157,6 +157,7 @@ After taking the CE course, participants will:
     - What is the projected net income for the next season?
     - How much inventory should we have? 
 
+<!--
 # AutoML
 
 - What is AutoML?
@@ -184,6 +185,7 @@ After taking the CE course, participants will:
 - The goal of AutoML
 - AutoML in practice
 - Do you need AutoML?
+-->
 
 # Where does data science belong in your organization?
 
