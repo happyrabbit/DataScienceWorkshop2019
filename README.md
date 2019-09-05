@@ -29,8 +29,8 @@ The primary audiences for this course are:
 | Lunch | 12:00 - 13:00 |
 | CNN + RNN + hands on | 13:00 - 15:00 |
 | Break | 15:00 - 15:15 |
-| Big Data Pipeline | 15:15 - 15:55 |
-| Cloud Platform and Hands-on | 15:55 - 17:00 |
+| Big Data Pipeline | 15:15 - 16:00 |
+| Cloud Platform and Hands-on | 16:00 - 17:00 |
 | Soft Skill and Project Cycle | 17:00 - 17:30 |
 
 # Some links
