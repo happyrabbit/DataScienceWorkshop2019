@@ -271,6 +271,24 @@ $$w=w-\alpha \frac{V_{dw}^{corrected}}{\sqrt{S_{dw}^{corrected}} +\epsilon};\ b=
     - Dropout 
     - Regularization (L1 or L2)
 
+# What deep learning can not do? 
+
+"Have you eaten of the tree of which I commanded you not to eat?"  
+"The woman whom you gave to be with me, she gave me fruit of the tree, and I ate."
+  
+    
+    
+"What is this that you have done?"  
+"The serpent deceived me, and I ate."
+
+# What deep learning can not do? 
+
+From [The Book of Why](http://bayes.cs.ucla.edu/WHY/) by Judea Pearl
+
+<center>
+![](images/Pearl2018_The-Book-of-Why_Ladder-of-Causation_680x950.png){width=50%}
+</center>
+
 # MNIST Dataset
 
 - Contains 70000 handwritten labeled digit images with label (60000 training + 10000 testing)
