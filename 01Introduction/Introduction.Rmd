@@ -43,11 +43,11 @@ After taking the CE course, participants will:
 
 # Three tracks of data science
 
-- Engineering: the process of making everything else possible
+- Engineering (infrastructure and production): the process of making everything else possible 
 
 - Analysis: the process of turning raw information into insights in a fast way
 
-- Modeling: the process of diving deeper into the data to discover the pattern we don't easily see
+- Modeling/Inference: the process of diving deeper into the data to discover the pattern we don't easily see
 
 
 (It is a group work from https://github.com/brohrer/academic_advisory/blob/master/authors.md !)
@@ -81,6 +81,14 @@ After taking the CE course, participants will:
 (2) Unsupervised learning
 
 (3) Customized model development
+
+# Some confusions and more to come
+
+- Data infrastructure engineer v.s. Data engineer
+- Data engineer v.s. BI engineer
+- BI engineer v.s. Data analyst
+- Data analyst v.s. Data scientist
+- ...
 
 # General Process of Modeling/Analytics
 

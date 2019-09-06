@@ -13,6 +13,39 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Empowering data scientist/statistician with engineering education
+
+## Why
+
+Industry is operating in an environment where mobile/web products and data infrastructure are becoming increasingly sophisticated
+
+Challenges if without being versed in certain aspects of engineering
+
+- Communication barrier: pipeline incidents, feature requests, authentication and data ownership
+- Inefficient processing of data, improper use of computation resources
+- Ad hoc investigation by data scientists about the meaning of data
+- Difficulty to put analysis/model to production
+
+# Empowering data scientist/statistician with engineering education
+
+## What
+
+- Data system: how data is generated/stored/computed/monitored
+- Data pipeline: how data flow to the database you are currently using
+- Logging best practice: logging best practices and schema design
+- Experimentation: experiment reporting framework to support product development
+- Anomaly detection: use in-house anomaly detection framework
+- Coding efficiency: create user define function in spark, coding conventions
+- ML tooling
+
+# Empowering data scientist/statistician with engineering education
+
+## How
+
+- Add engineering course to the curriculum
+- Internal training program
+- Participate in open source community
+
 # Some Statistics
 
 - 1 Gitabyte(GB) = 1024 Megabytes(MB) 
@@ -50,5 +83,5 @@ knitr::opts_chunk$set(echo = FALSE)
 # Hadoop/MapReduce/Spark
 
 <center>
-![](../03BigDataCloudPlatform/images/HDFS.png){width=80%}
+![](../../IDAD2019/03BigDataCloudPlatform/images/HDFS.png){width=80%}
 </center>
