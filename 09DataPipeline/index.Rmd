@@ -17,14 +17,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Why
 
-Industry is operating in an environment where mobile/web products and data infrastructure are becoming increasingly sophisticated
+- Industry is operating in an environment where mobile/web products and data infrastructure are becoming increasingly sophisticated
 
-Challenges if without being versed in certain aspects of engineering
-
-- Communication barrier: pipeline incidents, feature requests, authentication and data ownership
-- Inefficient processing of data, improper use of computation resources
-- Ad hoc investigation by data scientists about the meaning of data
-- Difficulty to put analysis/model to production
+- Challenges if without being versed in certain aspects of engineering
+    - Communication barrier: pipeline incidents, feature requests, authentication and data ownership
+    - Inefficient processing of data, improper use of computation resources
+    - Ad hoc investigation by data scientists about the meaning of data
+    - Difficulty to put analysis/model to production
 
 # Empowering data scientist/statistician with engineering education
 
@@ -45,6 +44,8 @@ Challenges if without being versed in certain aspects of engineering
 - Add engineering course to the curriculum
 - Internal training program
 - Participate in open source community
+
+# Big Data: How big is big?
 
 # Some Statistics
 
