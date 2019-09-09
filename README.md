@@ -24,14 +24,15 @@ The primary audiences for this course are:
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction to Data Science | 10:00 - 11:00 | 
-| FFNN + FFNN hands on| 10:45- 12:00 |
-| Lunch | 12:00 - 13:00 |
-| CNN + RNN + hands on | 13:00 - 15:00 |
-| Break | 15:00 - 15:15 |
-| Big Data Pipeline | 15:15 - 16:00 |
-| Cloud Platform and Hands-on | 16:00 - 17:00 |
-| Soft Skill and Project Cycle | 17:00 - 17:30 |
+| Introduction to Data Science | 9:00 - 9:45| 
+| FFNN | 9:45 - 10:30 |
+| Morning break (drinks/snacks) | 10:30 - 10:45 |
+| CNN and RNN | 10:45 - 12:15 |
+| Lunch | 12:15 - 13:00 |
+| Deep learning hands on | 13:00 - 14:30 |
+| Afternoon break (drinks/snacks) | 14:30 - 14:45 |
+| Big Data Pipeline | 14:45 - 15:15 |
+| Cloud Platform and Hands-on | 15:15 - 16:00 |
 
 # Some links
 
