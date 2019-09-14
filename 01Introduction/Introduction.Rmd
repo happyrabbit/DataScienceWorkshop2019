@@ -13,18 +13,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Learning outcomes:
-
-After taking the CE course, participants will:
-
-1. Get familiar with deep learning methods such as feedforward neural network, CNN, and RNN with hands-on how to apply these deep learning methods through R keras package with TensorFlow backend
-
-2. Understand data science in general and the end-to-end data science project cycles.
-
-3. Get familiar with cloud-based big data platforms (i.e., Databrick’s Spark) for data preprocessing and model development that are widely used in the development and production setting for industry and know how to transit from academia environment to enterprise environment quickly.
-
-4. Learn soft skills to ensure the successful delivery of data science projects and get familiar with typical data science project pitfalls.
-
 # Course Website
 
 <center>
