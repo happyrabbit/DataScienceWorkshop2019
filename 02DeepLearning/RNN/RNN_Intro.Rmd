@@ -167,14 +167,13 @@ $L(\hat{y}, y) = \Sigma_{t=1}^{T_y}L^{<t>} (\hat{y}^{<t>}, y^{<t>})$
 
 ![](images/gradients.PNG){width=70%}
 
-# Gated Recurrent Unit (GRU)
-
-- Another way to draw rnn unit
+# Another way to draw rnn unit
 
 $a^{<t>}=g(W_a[a^{<t-1>}, x^{<t>}] +b_a)$
 
 ![](images/rnn_unit.PNG){width=70%}
 
+<!--
 # Gated Recurrent Unit (GRU)
 
 - Another way to draw rnn unit
@@ -266,6 +265,7 @@ $\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})$
 $\Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})$
 
 $c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
+-->
 
 # Long Short Term Memory (LSTM)
 
