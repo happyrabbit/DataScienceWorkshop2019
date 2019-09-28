@@ -276,7 +276,7 @@ GRU & LSTM\\
 \Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})\ \ \ \  & \Gamma_{f}=\sigma(W_{f}[a^{<t-1>},x^{<t>}]+b_{f})\\
  & \Gamma_{0}=\sigma(W_{0}[a^{<t-1>},x^{<t>}]+b_{0})\\
 c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+(1-\Gamma_{u})*c^{<t-1>\ \ \ \ } & c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+\Gamma_{f}*c^{<t-1>}\\
-a^{<t>}=c^{<t>}\ \ \ \  & a^{<t>}=\Gamma_{0}*c^{<t>}
+a^{<t>}=c^{<t>}\ \ \ \  & a^{<t>}=\Gamma_{0}*tanh(c^{<t>})
 \end{array}
 
 # LSTM
