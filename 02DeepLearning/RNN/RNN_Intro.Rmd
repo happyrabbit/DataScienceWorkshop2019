@@ -270,14 +270,31 @@ $c^{<t>} = \Gamma_u * \tilde{c}^{<t>}+(1-\Gamma_u)*c^{<t-1>}$
 # Long Short Term Memory (LSTM)
 
 \begin{array}{cc}
-GRU & LSTM\\
-\tilde{c}^{<t>}=tanh(W_{c}[\Gamma_{r}*c^{<t-1>},x^{<t>}]+b_{c})\ \ \ \  & \tilde{c}^{<t>}=tanh(W_{c}[a^{<t-1>},x^{<t>}]+b_{c})\\
-\Gamma_{u}=\sigma(W_{u}[c^{<t-1>},x^{<t>}]+b_{u})\ \ \ \  & \Gamma_{u}=\sigma(W_{u}[a^{<t-1>},x^{<t>}]+b_{u})\\
-\Gamma_{r}=\sigma(W_{r}[c^{<t-1>},x^{<t>}]+b_{r})\ \ \ \  & \Gamma_{f}=\sigma(W_{f}[a^{<t-1>},x^{<t>}]+b_{f})\\
- & \Gamma_{0}=\sigma(W_{0}[a^{<t-1>},x^{<t>}]+b_{0})\\
-c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+(1-\Gamma_{u})*c^{<t-1>\ \ \ \ } & c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+\Gamma_{f}*c^{<t-1>}\\
-a^{<t>}=c^{<t>}\ \ \ \  & a^{<t>}=\Gamma_{0}*tanh(c^{<t>})
+
+\tilde{c}^{<t>}=tanh(W_{c}[a^{<t-1>},x^{<t>}]+b_{c})\\ \Gamma_{u}=\sigma(W_{u}[a^{<t-1>},x^{<t>}]+b_{u})\\ \Gamma_{f}=\sigma(W_{f}[a^{<t-1>},x^{<t>}]+b_{f})\\
+\Gamma_{0}=\sigma(W_{0}[a^{<t-1>},x^{<t>}]+b_{0})\\ c^{<t>}=\Gamma_{u}*\tilde{c}^{<t>}+\Gamma_{f}*c^{<t-1>}\\
+a^{<t>}=\Gamma_{0}*tanh(c^{<t>})
 \end{array}
+
+<center>
+![](images/LSTM_Full.PNG){width=50%}
+</center>
+
+# Step-by-step LSTM 
+
+![](images/LSTM_S1.PNG){width=80%}
+
+# Step-by-step LSTM
+
+![](images/LSTM_S2.PNG){width=80%}
+
+# Step-by-step LSTM
+
+![](images/LSTM_S3.PNG){width=80%}
+
+# Step-by-step LSTM
+
+![](images/LSTM_S4.PNG){width=80%}
 
 # LSTM
 
