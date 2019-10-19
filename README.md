@@ -25,9 +25,9 @@ The primary audiences for this course are:
 | Topic | Time |
 | :---: | :---: |
 | Introduction to Data Science | 9:00 - 09:45 | 
-| FFNN | 19:45 - 10:00 |
-| Morning break (drinks/snacks) | 10:00 - 10:15 |
-| CNN and RNN | 10:15 - 12:00 |
+| FFNN | 9:45 - 11:00 |
+| Morning break (drinks/snacks) | 11:00 - 11:15 |
+| CNN and RNN | 11:15 - 12:00 |
 | Lunch | 12:00 - 13:30 |
 | Deep learning hands on | 13:30 - 15:00 |
 | Afternoon break (drinks/snacks) | 15:00 - 15:15 |
