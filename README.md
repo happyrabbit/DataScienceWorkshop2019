@@ -1,4 +1,4 @@
-> :point_right: We have updated this course and here is 2020 course:[website](https://course2020.scientistcafe.com/course-materials/), [GitHub repo](https://github.com/happyrabbit/course2020)
+> :point_right: We have updated this course and here is 2020 course: [website](https://course2020.scientistcafe.com/course-materials/), [GitHub repo](https://github.com/happyrabbit/course2020)
 
 # Big Data, Data Science, and Deep Learning for Statisticians 
 
@@ -26,16 +26,7 @@ The primary audiences for this course are:
 
 | Topic | Time |
 | :---: | :---: |
-<<<<<<< HEAD
-| Introduction to Data Science | 10:00 - 11:00 | 
-| FFNN + FFNN hands on| 11:00- 12:00 |
-| Lunch | 12:00 - 13:00 |
-| CNN + RNN + hands on | 13:00 - 15:00 |
-| Break | 15:00 - 15:15 |
-| Big Data Pipeline | 15:15 - 16:00 |
-| Cloud Platform and Hands-on | 16:00 - 17:00 |
-| Soft Skill and Project Cycle | 17:00 - 17:30 |
-=======
+
 | Introduction to Data Science | 9:00 - 09:45 | 
 | FFNN | 9:45 - 11:00 |
 | Morning break (drinks/snacks) | 11:00 - 11:15 |
@@ -45,7 +36,6 @@ The primary audiences for this course are:
 | Afternoon break (drinks/snacks) | 15:00 - 15:15 |
 | Big Data Pipeline | 15:15 - 15:45 |
 | Cloud Platform and Hands-on | 15:45 - 16:30 |
->>>>>>> 8877d968566522287db0b477211f81c78754b387
 
 # Some links
 
