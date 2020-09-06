@@ -26,7 +26,6 @@ The primary audiences for this course are:
 
 | Topic | Time |
 | :---: | :---: |
-
 | Introduction to Data Science | 9:00 - 09:45 | 
 | FFNN | 9:45 - 11:00 |
 | Morning break (drinks/snacks) | 11:00 - 11:15 |
