@@ -1,3 +1,5 @@
+> :point_right: We have updated this course and here is 2020 course:[website](https://course2020.scientistcafe.com/course-materials/), [GitHub repo](https://github.com/happyrabbit/course2020)
+
 # Big Data, Data Science, and Deep Learning for Statisticians 
 
 With recent big data, data science and deep learning revolution, enterprises ranging from FORTUNE 100 to startups across the world are hungry for data scientists and machine learning scientists to bring actionable insight from the vast amount of data collected. In the past a couple of years, deep learning has gained traction in many application areas and it becomes an essential tool in data scientist’s toolbox. In this course, students will develop a clear understanding of the big data cloud platform, technical skills in data sciences and machine learning, and especially the motivation and use cases of deep learning through hands-on exercises. We will also cover the “art” part of data science and machine learning to guide participants to learn typical agile data science project flow, general pitfalls in data science and machine learning, and soft skills to effectively communicate with business stakeholders. This course will prepare statisticians to be successful data scientists and deep learning scientist in various industries and business sectors.
@@ -25,7 +27,7 @@ The primary audiences for this course are:
 | Topic | Time |
 | :---: | :---: |
 | Introduction to Data Science | 10:00 - 11:00 | 
-| FFNN + FFNN hands on| 10:45- 12:00 |
+| FFNN + FFNN hands on| 11:00- 12:00 |
 | Lunch | 12:00 - 13:00 |
 | CNN + RNN + hands on | 13:00 - 15:00 |
 | Break | 15:00 - 15:15 |
